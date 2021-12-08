@@ -20,6 +20,9 @@ body{
 #line:hover > i{
     color: #009c00;
 }
+#whatsapp:hover > i{
+    color: #369e43;
+}
 .searchdrop{
     height: 100%;
     background-color: #8f3771;
