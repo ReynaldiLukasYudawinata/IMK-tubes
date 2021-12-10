@@ -63,3 +63,49 @@ option{
     background-color: #8f3771;
     color: white;
 }
+.card-img-top {
+    width: 14.9vw;
+    height: 40vh;
+}
+.popular-cards{
+    width: 15vw;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.3s;
+    background-color: #682560;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    overflow: hidden;
+}
+.popular-cards:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+} 
+.book-desc{
+    background-color: #682560;
+    color: white;
+    text-align: center;
+}
+.card-title{
+    font-size: 25px;
+    margin-bottom: 7%;
+    height: 30%;
+}
+.book-price{
+    font-size: 25px;
+}
+.card-text{
+    margin: 0 0 2% 0;
+}
+.bi-star-fill{
+    color: yellow;
+}
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23a2407b' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+   
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23a2407b' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+.carousel-indicators .active{
+    background-color: #a2407b;
+}
