@@ -1,0 +1,65 @@
+.logo{
+    margin-left: 5%;
+}
+.navbar{
+    background-color: #313131;
+}
+body{
+    color: white;
+    background-color: #313131;
+}
+.social-medias{
+    font-size: 50px;
+}
+#instagram:hover > i{
+    color: #93296f;
+}
+#twitter:hover > i{
+    color: #4089c1;
+}
+#line:hover > i{
+    color: #009c00;
+}
+#whatsapp:hover > i{
+    color: #369e43;
+}
+.searchdrop{
+    height: 100%;
+    background-color: #8f3771;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    color: white;
+    border: none;
+    text-align: center;
+}
+
+.searchinput{
+    width: 50%;
+    margin-right: -3px;
+    padding-left: 1%;
+    padding-right: 25px;
+    background-color: #8f3771; 
+    color: white;
+    box-shadow: none;
+    border: none;
+    line-height: initial;
+    outline: none;
+}
+.searchbtn{
+    background-color: #8f3771;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: white;
+}
+.searchdrop:hover, .searchbtn:hover{
+    background-color: #682962;
+    color: white;
+}
+.searchdrop-item:hover, .menudrop-item:hover{
+    background-color: #682962;
+    color: white;
+}
+option{
+    background-color: #8f3771;
+    color: white;
+}
