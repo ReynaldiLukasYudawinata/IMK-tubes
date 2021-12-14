@@ -1,0 +1,103 @@
+.gambarBuku {
+    width: 33%;
+    min-height: 100%;
+    height: auto;
+    
+}
+
+.gambarBuku>img{
+    max-width: 30%;
+    margin-left: 35%;
+}
+
+.deretanGambar{
+    margin-left: 35.5%;
+    margin-top:3%;
+}
+.deretanGambar img:hover{
+    opacity:0.5;
+}
+.deretanGambar>img{
+    max-width: 20%;
+    margin-right: 5%;
+}
+
+.detailBuku {
+    width :34%;
+}
+
+.addToCart {
+    width: 33%;
+}
+
+.bintang{
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid black;
+    color: black; 
+    
+    padding-left: 5%;
+    font-size: 1.25rem;
+}
+
+.sold{
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid black;
+    color: black; 
+     
+    padding-left: 5%;
+    font-size: 1.25rem;
+}
+
+.price{
+    width: 20%;
+    height: 100%;
+    color: black; 
+     
+    padding-left: 5%;
+    font-size: 1.25rem;
+}
+
+.kotak{
+    color:black; 
+    border:1px solid black; 
+    margin-top:2%;
+    border-radius: 0.5rem;
+    padding:0.8rem;
+}
+
+.addToCartLogin{
+    height: 15%;
+    background-color: #8f3771;
+    border-radius: 5%;
+    border:none;
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left:34%;
+}
+
+.bagianKanan{
+    margin: 3rem;
+   margin-top:14%;
+   color: black;
+   border:1px solid black; 
+   height: 10%;
+   padding:2rem;
+   border-radius: 0.5rem;
+}
+
+
+.addToCart{
+    margin: 3rem;
+   margin-top:12.85%;
+   color: black;
+   color:black; 
+   border:1px solid black; 
+   border-radius: 0.5rem;
+   width:20%;
+   padding:1rem;
+}
+
+
