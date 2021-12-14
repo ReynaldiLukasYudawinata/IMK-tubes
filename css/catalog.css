@@ -1,0 +1,19 @@
+.content{
+    height:100%;
+}
+.contentAtas{
+    height:10%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.nextPage{
+    background-color: #8f3771;
+    border-radius: 0.5rem;
+    height: 3%;
+    padding:0.3rem;
+    border:none;
+    padding-left:0.45rem;
+    padding-right:0.45rem;
+}
