@@ -3,37 +3,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/transaction_history-style.css">
+        <link rel="stylesheet" href="css/home-style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-        <title>Transaction History</title>
+        <title>Customer Service</title>
     </head>
     <body>
-        <div id="modal" class="modal" tabindex="-1" style="color: black;">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content" style="background-color: #f8f4f4;">
-                <div class="modal-header">
-                  <h5 class="modal-title">Choose Date</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="d-flex flex-row">
-                        <div class="d-flex flex-column">
-                            <p>From:</p>
-                            <input type="date">
-                        </div>
-                        <div class="d-flex flex-column ms-auto">
-                            <p>To:</p>
-                            <input type="date">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                  <a href="transaction_history-date_picked-eng.html"><button type="button" class="btn" style="background-color: #8f3771; color: white;">Apply</button></a>
-                </div>
-              </div>
-            </div>
-        </div>
-
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand logo" href="#">
@@ -60,10 +34,10 @@
                             <a class="nav-link active" aria-current="page" href="#"><img class="mb-1 me-1" src="images/UK_flag_small.png" alt="">ENG</a>
                         </li>
                         <li class="nav-item fs-5 mt-1 me-5">
-                            <a class="nav-link" aria-current="page" href="transaction_history-date_not_picked-ind.html"><img class="mb-1 me-1" src="images/IND_small.png" alt="">IND</a>
+                            <a class="nav-link" aria-current="page" href="home-signed-ind.html"><img class="mb-1 me-1" src="images/IND_small.png" alt="">IND</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" aria-current="page" href="home-signed-eng.html">Home</a>
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item me-3">
                             <a class="nav-link" href="#">Catalog</a>
@@ -81,7 +55,7 @@
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="menudrop-item dropdown-item" href="#" style="color: white;">My Cart</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="menudrop-item dropdown-item" href="#" style="color: white;">Purchase Transaction</a></li>
+                                <li><a class="menudrop-item dropdown-item" href="transaction_history-date_not_picked-eng.html" style="color: white;">Purchase Transaction</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="menudrop-item dropdown-item" href="home-not_signed-eng.html" style="color: white;">Log Out</a></li>
                             </ul>
@@ -91,32 +65,50 @@
             </div>
         </nav>
         
-        <div class="card" style="color: black; background-color: #f4ebe1; height: 95vh;">
-            <div class="card-body">
-                <div class="d-flex flex-row">
-                    <h2 style="margin-top: 3vh; margin-left: 42%;">Transaction History</h2>
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#modal" class="transaction-date">November 1, 2021 - December 1, 2021</button>
-                </div>
-                <div class="card mx-auto" style="color: black; background-color: white; width: 70%; height: 70vh; margin-top: 3vh; border-radius: 2em;">
-                    <div class="card-body d-flex flex-column">
-                        <div class="d-flex flex-row">
-                            <img src="images/book-1.jpg" alt="" style="width: 15%; margin-left: 2%; margin-top: 1%;">
-                            <div class="d-flex flex-column" style="margin-left: 2%; margin-top: 9%;">
-                                <p class="transaction-details">Captain Underpants</p>
-                                <p class="transaction-details">1 pcs</p>
-                            </div>
-                            <div class="transaction-total">
-                                <p>November 21, 2021</p>
-                                <p>ID: 1258071024</p>
-                                <p>Total: $11.76</p>
+        <div class="card" style="color: black; background-color: #f4ebe1; height: 85vh;">
+            <div class="card-body d-flex flex-column">
+                <h2 class="mx-auto my-5">Customer Service</h2>
+                <div class="accordion accordion-flush mx-auto" id="accordionPanelsStayOpenExample" style="width: 50%;">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" style="background-color: #f4ebe1;">
+                            How do I contact the Customer service?
+                        </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body" style="background-color: #f4ebe1;">
+                            <div class="ms-5">
+                                You simply email us to tokobukupakjohn@gmail.com and ask us about anything regarding the website.
                             </div>
                         </div>
-                        <div class="d-flex flex-row">
-                            <img src="images/book-2.jpg" alt="" style="width: 15%; margin-left: 2%; margin-top: 1%;">
-                            <div class="d-flex flex-column" style="margin-left: 2%; margin-top: 9%;">
-                                <p class="transaction-details">Harry Potter and the Sorcerer's Stone</p>
-                                <p class="transaction-details">1 pcs</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo" style="background-color: #f4ebe1;">
+                            Lorem ipsum dolor sit amet
+                        </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body" style="background-color: #f4ebe1;">
+                            <div class="ms-5">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, nisi eget facilisis congue, orci ipsum tincidunt sapien, eget aliquam justo massa sed tortor. Sed eget nisi metus.
                             </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree" style="background-color: #f4ebe1;">
+                            Lorem ipsum dolor sit amet
+                        </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body" style="background-color: #f4ebe1;">
+                            <div class="ms-5">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, nisi eget facilisis congue, orci ipsum tincidunt sapien, eget aliquam justo massa sed tortor. Sed eget nisi metus.
+                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>
