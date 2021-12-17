@@ -1,0 +1,14 @@
+.divButton button{
+    background-color: #8f3771;
+    border:none;
+    border-radius: 0.4rem;
+    width: 8rem;
+    height:2rem;
+    
+}
+
+
+.bagianKanan input{
+    border-radius: 0.5rem;
+    width:25rem;
+}

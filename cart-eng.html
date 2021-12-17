@@ -3,37 +3,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/transaction_history-style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/home-style.css">
+        <link rel="stylesheet" href="css/cart-eng.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-        <title>Transaction History</title>
+        <title>Cart</title>
     </head>
     <body>
-        <div id="modal" class="modal" tabindex="-1" style="color: black;">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content" style="background-color: #f8f4f4;">
-                <div class="modal-header">
-                  <h5 class="modal-title">Choose Date</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="d-flex flex-row">
-                        <div class="d-flex flex-column">
-                            <p>From:</p>
-                            <input type="date">
-                        </div>
-                        <div class="d-flex flex-column ms-auto">
-                            <p>To:</p>
-                            <input type="date">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                  <a href="transaction_history-date_picked-eng.html"><button type="button" class="btn" style="background-color: #8f3771; color: white;">Apply</button></a>
-                </div>
-              </div>
-            </div>
-        </div>
-
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand logo" href="#">
@@ -60,10 +36,10 @@
                             <a class="nav-link active" aria-current="page" href="#"><img class="mb-1 me-1" src="images/UK_flag_small.png" alt="">ENG</a>
                         </li>
                         <li class="nav-item fs-5 mt-1 me-5">
-                            <a class="nav-link" aria-current="page" href="transaction_history-date_not_picked-ind.html"><img class="mb-1 me-1" src="images/IND_small.png" alt="">IND</a>
+                            <a class="nav-link" aria-current="page" href="cart-ind.html"><img class="mb-1 me-1" src="images/IND_small.png" alt="">IND</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" aria-current="page" href="home-signed-eng.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item me-3">
                             <a class="nav-link" href="#">Catalog</a>
@@ -90,35 +66,55 @@
                 </div>
             </div>
         </nav>
-        
-        <div class="card" style="color: black; background-color: #f4ebe1; height: 95vh;">
-            <div class="card-body">
-                <div class="d-flex flex-row">
-                    <h2 style="margin-top: 3vh; margin-left: 42%;">Transaction History</h2>
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#modal" class="transaction-date">November 1, 2021 - December 1, 2021</button>
-                </div>
-                <div class="card mx-auto" style="color: black; background-color: white; width: 70%; height: 70vh; margin-top: 3vh; border-radius: 2em;">
-                    <div class="card-body d-flex flex-column">
-                        <div class="d-flex flex-row">
-                            <img src="images/book-1.jpg" alt="" style="width: 15%; margin-left: 2%; margin-top: 1%;">
-                            <div class="d-flex flex-column" style="margin-left: 2%; margin-top: 9%;">
-                                <p class="transaction-details">Captain Underpants</p>
-                                <p class="transaction-details">1 pcs</p>
-                            </div>
-                            <div class="transaction-total">
-                                <p>November 21, 2021</p>
-                                <p>ID: 1258071024</p>
-                                <p>Total: $11.76</p>
-                            </div>
-                        </div>
-                        <div class="d-flex flex-row">
-                            <img src="images/book-2.jpg" alt="" style="width: 15%; margin-left: 2%; margin-top: 1%;">
-                            <div class="d-flex flex-column" style="margin-left: 2%; margin-top: 9%;">
-                                <p class="transaction-details">Harry Potter and the Sorcerer's Stone</p>
-                                <p class="transaction-details">1 pcs</p>
-                            </div>
-                        </div>
+
+        <div class="content" style="background-color: #f4ebe1; padding-bottom: 5%; padding-top: 3%;">
+            <div style="display:flex; width: 100%; " >
+                <h1 style="text-align: center; color: black; margin-left: 7rem;" >Cart</h1> 
+                
+                <div class="kotakBukuCaptain" style="display:flex; flex-direction: row">
+                    <img id= "captain" src="images/book-1.jpg" alt="captain underpants" width="130vw" height="180vh" >
+
+                    <div class ="deskripsiCaptain" style="width: 40%;" >
+                        <h4 style="color: black">Captain Underpants And The Attack Of The Talking Toilets</h4>
+                        <h5 style="color: black">By: Dav Pilky</h5>
+                        <h5 style="color: black">Rp. 69.000,00</h5>
                     </div>
+
+                    <div class = "jumlahCaptain" style=" display:flex; flex-direction: row">
+                        <button id="buttonMinCaptain" style="height: 2rem;" onclick="minusCaptain()"><i class="fa fa-minus-circle"></i></button>
+                        <h4 id="quantityCaptain" style="margin-left: 1rem; margin-right: 1rem; color: black;">1</h4>
+                        <button id = "buttonPlusCaptain" style="height: 2rem;" onclick="plusCaptain()"><i class="fa fa-plus-circle"></i></button>
+                        <button id = "tempatSampahCaptain" style="height: 2rem;" onclick="plus()"><i class="fa fa-trash"></i></button>
+                    </div>
+                </div>
+
+                <div class="kotakBukuHarry" style="display:flex; flex-direction: row">
+                    <img id= "Harry" src="images/book-2.jpg" alt="heri potter" width="130vw" height="180vh" >
+
+                    <div class ="deskripsiCaptain" style="width: 40%;" >
+                        <h4 style="color: black">Harry Potter And The Sorcerer's Stone</h4>
+                        <h5 style="color: black">By: J.K. Rowling</h5>
+                        <h5 style="color: black">Rp. 100.000,00</h5>
+                    </div>
+
+                    <div class = "jumlahHarry" style=" display:flex; flex-direction: row">
+                        <button id="buttonMinHarry" style="height: 2rem;" onclick="minusHarry()"><i class="fa fa-minus-circle"></i></button>
+                        <h4 id="quantityHarry" style="margin-left: 1rem; margin-right: 1rem; color: black;">1</h4>
+                        <button id = "buttonPlusHarry" style="height: 2rem;" onclick="plusHarry()"><i class="fa fa-plus-circle"></i></button>
+                        <button id = "tempatSampahHarry" style="height: 2rem;" onclick="plus()"><i class="fa fa-trash"></i></button>
+                    </div>
+                </div>
+
+                <div class="belanja">
+                    <h3 id="shopSum" style="color: black">Shopping Summary</h3>
+                    <h4 id = "totalPrice" style="color: black">Total Price (</h4>
+                    <h4 id = "jumlahBuku" style="color: black">2</h4>
+                    <h4 id="items" style="color: black"> Items)</h4>
+                    <h4 id="subtotal" style="color: black">Rp 169.000,00</h4>
+                    <h4 id="titik" style="color: black">---------------------------------------------------------</h4>
+                    <h4 id="totPri" style="color: black">Total Price</h4>
+                    <h4 id="hargaAkhir" style="color: black">Rp 169.000,00</h4>
+                    <button id="checkout" style="background-color: fuchsia; font-size: x-large; border-radius: 13px;color: white; width: 15rem;">Checkout</button>
                 </div>
             </div>
         </div>
@@ -150,7 +146,40 @@
             </div>
         </footer>
 
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+
     </body>
+    <script>
+        function minusCaptain(){
+            var q=document.getElementById("quantityCaptain").innerHTML;
+            var q2=document.getElementById("quantityHarry").innerHTML;
+            //console.log(q);
+            var quantity=parseInt(q);
+            var quantity2=parseInt(q2);
+    
+    
+    
+            if(quantity>1){
+                quantity=quantity-1;
+                console.log(quantity);
+            }
+            document.getElementById("quantityCaptain").innerHTML=quantity;
+            subtotal=(quantity*69000)+(quantity2*100000);
+            document.getElementById("subtotal").innerHTML="Rp. "+ subtotal +",00"
+        }
+        function plusCaptain(){
+            var q=document.getElementById("quantityCaptain").innerHTML;
+            var q2=document.getElementById("quantityHarry").innerHTML;
+            //console.log(q);
+            var quantity=parseInt(q);
+            var quantity2=parseInt(q2);
+            if(quantity<999){
+                quantity=quantity+1;
+                console.log(quantity);
+            }
+            document.getElementById("quantityCaptain").innerHTML=quantity;
+            subtotal=(quantity*69000)+(quantity2*100000);
+            document.getElementById("subtotal").innerHTML="Rp. "+subtotal+",00"
+        }
+    </script>
 </html>
