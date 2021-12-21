@@ -10,14 +10,11 @@
 
 .nextPage{
     background-color: #8f3771;
-
     color: #FFF;
-
     border-radius: 0.5rem;
     height: 3%;
     padding:0.3rem;
     border:none;
-
     padding: .55rem;
     padding-left: .95rem;
     padding-right: .95rem;
@@ -68,5 +65,3 @@
 .catalog-cards:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
 }
-
-
