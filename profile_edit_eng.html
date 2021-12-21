@@ -35,7 +35,7 @@
                             <a class="nav-link active" aria-current="page" href="#"><img class="mb-1 me-1" src="images/UK_flag_small.png" alt="">ENG</a>
                         </li>
                         <li class="nav-item fs-5 mt-1 me-5">
-                            <a class="nav-link" aria-current="page" href="home-signed-ind.html"><img class="mb-1 me-1" src="images/IND_small.png" alt="">IND</a>
+                            <a class="nav-link" aria-current="page" href="profile_edit_ind.html"><img class="mb-1 me-1" src="images/IND_small.png" alt="">IND</a>
                         </li>
                         <li class="nav-item me-3">
                             <a class="nav-link active" aria-current="page" href="home-signed-eng.html">Home</a>
@@ -88,13 +88,13 @@
                              <td class="keterangan">Change Password</td>
                              <td class="titik-dua">:  </td>
                              
-                             <td><input type="text" placeholder=""></td>
+                             <td><input id="password" type="password" placeholder=""></td>
                          </tr>
                          <tr>
                              <td class="keterangan">Re-type Password</td>
                              <td class="titik-dua">:  </td>
                              
-                             <td><input type="text" placeholder=""></td>
+                             <td><input id="rePassword" type="password" placeholder=""></td>
                          </tr>
                          <tr>
                              <td class="keterangan">Address</td>
@@ -111,8 +111,8 @@
                         </table>
                         <br>
                         <div class="divButton" style="display: flex; flex-direction: row;">
-                             <button style="margin-right:3rem; color: #fff;">Edit</button>     
-                             <button style=" color: #fff;">Cancel</button>
+                             <button  type="button" onclick="edit()" style="margin-right:3rem; color: #fff;">Edit</button>     
+                             <button  type="button"  onclick="location.href='profile_sebelum_edit_eng.html'" style=" color: #fff;">Cancel</button>
                          </div>
                      </div>
                 </div>
@@ -148,7 +148,19 @@
                 </div>
             </footer>
         </div>
-
+        <script>
+            function edit(){
+                password=document.getElementById("password").value;
+                re=document.getElementById("rePassword").value;
+                console.log(re);
+                if(password!=re){
+                    alert("Kata sandi dan kata sandi yang diketik ulang harus sama!");
+                }
+                else{
+                    location.href="profile_setelah_edit_eng.html"
+                }
+            }
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     </body>
