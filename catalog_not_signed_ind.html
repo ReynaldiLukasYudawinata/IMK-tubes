@@ -25,28 +25,28 @@
                             <select class="searchdrop form-select" aria-label="Default select example">
                                 <option class="searchdrop-item" value="0" selected>Judul</option>
                                 <option class="searchdrop-item" value="1">Pengarang</option>
-                                <option class="searchdrop-item" value="2">Penerbit</option>
                                 <option class="searchdrop-item" value="3">ISBN</option>
+                                
                             </select>
                         </div>
                         <input class="searchinput border-start" aria-label="Search">
-                        <button class="searchbtn btn" type="submit"><i class="bi bi-search"></i></button>
+                        <button class="searchbtn btn" type="button" onclick="location.href='catalog_searched_signed_eng.html'"><i class="bi bi-search"></i></button>
                     </form>
                     <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-end fs-4" style="width: 100%; margin-right: 5%;">
                         <li class="nav-item fs-5 mt-1">
-                            <a class="nav-link" aria-current="page" href="book_details_not_signed_front_eng.html"><img class="mb-1 me-1" src="images/UK_flag_small.png" alt="">ENG</a>
+                            <a class="nav-link" aria-current="page" href="catalog_not_signed_eng.html"><img class="mb-1 me-1" src="images/UK_flag_small.png" alt="">ENG</a>
                         </li>
                         <li class="nav-item fs-5 mt-1 me-5">
                             <a class="nav-link active" aria-current="page" href="#"><img class="mb-1 me-1" src="images/IND_small.png" alt="">IND</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link " aria-current="page" href="#">Beranda</a>
+                            <a class="nav-link " aria-current="page" href="home-not_signed-ind.html">Beranda</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link active" href="#">Katalog</a>
+                            <a class="nav-link active" href="catalog_not_signed_ind.html">Katalog</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="#">FAQ</a>
+                            <a class="nav-link" href="faq_signed_ind.html">FAQ</a>
                         </li>
                         <li class="nav-item me-3">
                             <a class="nav-link" href="login-ind.html">Masuk</a>
@@ -58,25 +58,29 @@
        
         <section class="content" style="background-color: #f4ebe1; padding-bottom: 5%; padding-top: 3%; padding-left:15%; padding-right:15%;">
             <div class="contentAtas" style="height:10%; margin-bottom: 6rem;">
-                <h2 style="color: #4e4e4e;">Katalog</h2>
+                <h2 style="color: #4e4e4e;">Catalog</h2>
                 <div class="dropdownCatalog">
-                    <select class="searchdrop form-select" aria-label="Default select example" style="border-radius: 0.5rem; margin-left:700%;">
-                        <option class="searchdrop-item" value="0" selected>Berdasarkan Judul A-Z</option>
-                        <option class="searchdrop-item" value="1">Berdasarkan Judul Z-A</option>
-                        <option class="searchdrop-item" value="2">Berdasarkan Pengarang A-Z</option>
-                        <option class="searchdrop-item" value="3">Berdasarkan Pengarang Z-A</option>
-                        <option class="searchdrop-item" value="2">Berdasarkan Pengarang Menurun</option>
-                        <option class="searchdrop-item" value="3">Berdasarkan Rating Menaik</option>
+                    <select class="searchdrop form-select" aria-label="Default select example" style="border-radius: 0.5rem; margin-left:440%;" onchange="sort(this.value)">
+                        <option class="searchdrop-item" value="catalog_signed_eng.html" selected>Berdasarkan Rating Menurun</option>
+                        <option class="searchdrop-item" value="catalog_sort_rating_asc.html" >Berdasarkan Rating Menaik</option>
+                        <option class="searchdrop-item" value="catalog_sort_title_asc.html">Berdasarkan Judul A-Z</option>
+                        <option class="searchdrop-item" value="catalog_sort_title_desc.html" >Berdasarkan Judul Z-A</option>
+                        <option class="searchdrop-item" value="catalog_sort_author_asc.html" >Berdasarkan Pengarang A-Z</option>
+                        <option class="searchdrop-item" value="catalog_sort_author_desc.html" >Berdasarkan Pengarang Z-A</option>
                     </select>
                 </div>
             </div>
-            
+            <script>
+                function sort(value){
+                    window.location=value;
+                }
+            </script>
             <div class="container">
                 <div class="contentTengah" style="margin-bottom:6rem;">
                     <!-- Row 1 -->
                     <div class="row-one" style="margin-left: auto; margin-right: auto;">
                         <div style="display:flex;flex-direction: row; margin-bottom: 5rem;">
-                            <div class="card catalog-cards mx-4">
+                            <div class="card catalog-cards mx-4" onclick="location.href='book_details_not_signed_front_ind.html'">
                                 <img src="images/book-1.jpg" class="card-img-top mx-auto" alt="...">
                                 <h5 class="card-header card-title d-flex catalog-title align-items-center justify-content-center text-center" style="margin-bottom: 0;">Captain Underpants</h5>
                                 <div class="card-body book-desc">
@@ -248,9 +252,9 @@
             </div>
  
             <div class="contentBawah" style="height:10%;margin-bottom:6rem; color:black">
-                <div style="display: flex; flex-direction: row; margin-left:80%;">
+                <div style="display: flex; flex-direction: row; margin-left:70%;">
                     <p style="margin-right:2rem; margin-top:0.2rem;">Halaman 1</p>
-                    <button class="nextPage">
+                    <button type="button"  class="nextPage">
                         Halaman Berikutnya
                     </button>
                 </div>

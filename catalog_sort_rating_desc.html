@@ -37,7 +37,7 @@
                             <a class="nav-link active" aria-current="page" href="#"><img class="mb-1 me-1" src="images/UK_flag_small.png" alt="">ENG</a>
                         </li>
                         <li class="nav-item fs-5 mt-1 me-5">
-                            <a class="nav-link" aria-current="page" href="book_details_signed_back_ind.html"><img class="mb-1 me-1" src="images/IND_small.png" alt="">IND</a>
+                            <a class="nav-link" aria-current="page" href="catalog_signed_ind.html"><img class="mb-1 me-1" src="images/IND_small.png" alt="">IND</a>
                         </li>
                         <li class="nav-item me-3">
                             <a class="nav-link" aria-current="page" href="#">Home</a>
@@ -72,16 +72,22 @@
             <div class="contentAtas" style="height:10%; margin-bottom: 6rem;">
                 <h2 style="color: #4e4e4e;">Catalog</h2>
                 <div class="dropdownCatalog">
-                    <select class="searchdrop form-select" aria-label="Default select example" style="border-radius: 0.5rem; margin-left:700%;">
-                        <option class="searchdrop-item" value="0" selected>By Title A-Z</option>
-                        <option class="searchdrop-item" value="1">By Title Z-A</option>
-                        <option class="searchdrop-item" value="2">By Author A-Z</option>
-                        <option class="searchdrop-item" value="3">By Author Z-A</option>
-                        <option class="searchdrop-item" value="2">By Rating Desc</option>
-                        <option class="searchdrop-item" value="3">By Rating Asc</option>
+                    <select class="searchdrop form-select" aria-label="Default select example" style="border-radius: 0.5rem; margin-left:700%;" onchange="sort(this.value)">
+                        <option class="searchdrop-item" value="catalog_signed_eng.html" selected>By Rating Desc</option>
+                        <option class="searchdrop-item" value="catalog_sort_rating_asc.html" >By Rating Asc</option>
+                        <option class="searchdrop-item" value="catalog_sort_title_asc.html">By Title A-Z</option>
+                        <option class="searchdrop-item" value="catalog_sort_title_desc.html" >By Title Z-A</option>
+                        <option class="searchdrop-item" value="catalog_sort_author_asc.html" >By Author A-Z</option>
+                        <option class="searchdrop-item" value="catalog_sort_author_desc.html" >By Author Z-A</option>
                     </select>
                 </div>
             </div>
+            <script>
+                function sort(value){
+                    window.location=value;
+                }
+            </script>
+           
             
             <div class="container">
                 <div class="contentTengah" style="margin-bottom:6rem;">

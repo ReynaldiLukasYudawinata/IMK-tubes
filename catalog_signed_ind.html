@@ -29,12 +29,14 @@
                                 <option class="searchdrop-item" value="3">ISBN</option>
                             </select>
                         </div>
+
+
                         <input class="searchinput border-start" aria-label="Search">
                         <button class="searchbtn btn" type="submit"><i class="bi bi-search"></i></button>
                     </form>
                     <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-end fs-4" style="width: 100%; margin-right: 5%;">
                         <li class="nav-item fs-5 mt-1">
-                            <a class="nav-link" aria-current="page" href="book_details_signed_back_eng.html"><img class="mb-1 me-1" src="images/UK_flag_small.png" alt="">ENG</a>
+                            <a class="nav-link" aria-current="page" href="catalog_signed_eng.html"><img class="mb-1 me-1" src="images/UK_flag_small.png" alt="">ENG</a>
                         </li>
                         <li class="nav-item fs-5 mt-1 me-5">
                             <a class="nav-link active" aria-current="page" href="#"><img class="mb-1 me-1" src="images/IND_small.png" alt="">IND</a>
@@ -70,18 +72,23 @@
        
         <section class="content" style="background-color: #f4ebe1; padding-bottom: 5%; padding-top: 3%; padding-left:15%; padding-right:15%;">
             <div class="contentAtas" style="height:10%; margin-bottom: 6rem;">
-                <h2 style="color: #4e4e4e;">Katalog</h2>
+                <h2 style="color: #4e4e4e;">Catalog</h2>
                 <div class="dropdownCatalog">
-                    <select class="searchdrop form-select" aria-label="Default select example" style="border-radius: 0.5rem; margin-left:700%;">
-                        <option class="searchdrop-item" value="0" selected>Berdasarkan Judul A-Z</option>
-                        <option class="searchdrop-item" value="1">Berdasarkan Judul Z-A</option>
-                        <option class="searchdrop-item" value="2">Berdasarkan Pengarang A-Z</option>
-                        <option class="searchdrop-item" value="3">Berdasarkan Pengarang Z-A</option>
-                        <option class="searchdrop-item" value="2">Berdasarkan Pengarang Menurun</option>
-                        <option class="searchdrop-item" value="3">Berdasarkan Rating Menaik</option>
+                    <select class="searchdrop form-select" aria-label="Default select example" style="border-radius: 0.5rem; margin-left:700%;" onchange="sort(this.value)">
+                        <option class="searchdrop-item" value="catalog_signed_eng.html" selected>By Rating Desc</option>
+                        <option class="searchdrop-item" value="catalog_sort_rating_asc.html" >By Rating Asc</option>
+                        <option class="searchdrop-item" value="catalog_sort_title_asc.html">By Title A-Z</option>
+                        <option class="searchdrop-item" value="catalog_sort_title_desc.html" >By Title Z-A</option>
+                        <option class="searchdrop-item" value="catalog_sort_author_asc.html" >By Author A-Z</option>
+                        <option class="searchdrop-item" value="catalog_sort_author_desc.html" >By Author Z-A</option>
                     </select>
                 </div>
             </div>
+            <script>
+                function sort(value){
+                    window.location=value;
+                }
+            </script>
             
             <div class="container">
                 <div class="contentTengah" style="margin-bottom:6rem;">
