@@ -35,9 +35,9 @@
     height: 100%;
     border-right: 1px solid black;
     color: black; 
-    
     padding-left: 5%;
     font-size: 1.25rem;
+    transform: translateY(10%);
 }
 
 .sold{
@@ -45,18 +45,18 @@
     height: 100%;
     border-right: 1px solid black;
     color: black; 
-     
     padding-left: 5%;
     font-size: 1.25rem;
+    transform: translateY(10%);
 }
 
 .price{
     width: 20%;
     height: 100%;
     color: black; 
-     
-    padding-left: 5%;
+    padding-left: 2%;
     font-size: 1.25rem;
+    transform: translateY(10%);
 }
 
 .kotak{
@@ -65,6 +65,7 @@
     margin-top:2%;
     border-radius: 0.5rem;
     padding:0.8rem;
+    background-color: #FFF;
 }
 
 .addToCartLogin{
@@ -76,6 +77,10 @@
     font-size: 1.5rem;
     text-align: center;
     margin-left:34%;
+    color: #FFF; 
+    padding-left: 1rem; 
+    padding-right: 1rem; 
+    transform: translateX(-20%);
 }
 
 .bagianKanan{
@@ -86,6 +91,7 @@
    height: 10%;
    padding:2rem;
    border-radius: 0.5rem;
+   background-color: #FFF;
 }
 
 
@@ -98,6 +104,33 @@
    border-radius: 0.5rem;
    width:20%;
    padding:1rem;
+   background-color: #FFF;
 }
 
+.keterangan{
+    width: 55%;
+}
+
+.titik-dua{
+    width: 5%;
+}
+
+.btn-plus{
+    margin-left: 2rem;
+    background-color: #8f3771;
+    margin-right: 2rem; 
+    border: none; 
+    padding: 0 13px 0 13px; 
+    color: #FFF;
+    font-size: 2rem;
+}
+
+.btn-min{
+    background-color: #8f3771; 
+    margin-right: 2rem; 
+    border: none; 
+    padding: 0 15px 0 15px; 
+    color: #FFF;
+    font-size: 2rem;
+}
 
