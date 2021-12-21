@@ -83,11 +83,6 @@
                     <h3 style="opacity: 0.5; color: black; font-size: 1rem;">Dav Pilky</h3>
                     
                     <h1 style="color:black;">Captain Underpants And The Attack of The Talking Toilets</h1>
-                    <div style="color: black;display: flex; flex-direction: column; position:absolute;margin-left:32%; transform: translateY(-100%); font-size: 1.2rem;" >
-                        <i style="margin-bottom:0.5rem;" class="fa fa-heart" ></i>
-                        <i  style="margin-bottom:0.5rem;" class="fa fa-star" ></i>
-                        <i class="fa fa-share" ></i>
-                    </div>
                     <div class="statistics" style="display: flex; flex-direction: row; border-bottom: 1px solid black; height:8%; padding-bottom: 1%;">
                         <div class="bintang" >
                             <i class="fa fa-star" style="color: #ffb300;"></i>
@@ -97,7 +92,7 @@
                             Sold: 69
                         </div>
                         <div class="price">
-                            Rp. 70.000
+                            $ 4.80
                         </div>
                        
                     </div>
@@ -106,23 +101,23 @@
                         <h3>Detail</h3>
                         <table >
                             <tr>
-                                <td>Release Date</td>
-                                <td>:</td>
+                                <td class="keterangan">Release Date</td>
+                                <td class="titik-dua">:</td>
                                 <td>February 1 1999</td>
                             </tr>
                             <tr>
-                                <td>ISBN</td>
-                                <td>:</td>
+                                <td class="keterangan">ISBN</td>
+                                <td class="titik-dua">:</td>
                                 <td>9780545027274</td>
                             </tr>
                             <tr>
-                                <td>Publisher</td>
-                                <td>:</td>
+                                <td class="keterangan">Publisher</td>
+                                <td class="titik-dua">:</td>
                                 <td>Gramedia</td>
                             </tr>
                             <tr>
-                                <td>Page Quantity</td>
-                                <td>:</td>
+                                <td class="keterangan">Page Quantity</td>
+                                <td class="titik-dua">:</td>
                                 <td>144 pages</td>
                             </tr>
                         </table>
@@ -130,20 +125,20 @@
                     <!-- kotak bawah -->
                     <div class="kotak">
                         <h3>Synopsis</h3>
-                        <p>The second book in the Captain Underpants series, this story is about how George Beard and Harold Hutchins sabotage the school's annual Invention Convention, forcing the principal, Mr. Krupp, to put them in permanent detention. They decide to create a comic book about Captain Underpants. But when they try to make copies on the copier that the school braniac, Melvin, designed, their copies become three-dimensional objects. Chaos ensues when the toilets come alive and threaten to eat the school's occupants.</p>
+                        <p style="text-align: justify;">The second book in the Captain Underpants series, this story is about how George Beard and Harold Hutchins sabotage the school's annual Invention Convention, forcing the principal, Mr. Krupp, to put them in permanent detention. They decide to create a comic book about Captain Underpants. But when they try to make copies on the copier that the school braniac, Melvin, designed, their copies become three-dimensional objects. Chaos ensues when the toilets come alive and threaten to eat the school's occupants.</p>
                     </div>
                 </div>
                 <div class="addToCart" >
                     <h4>Quantity:</h4>
                     <div style="display: flex; flex-direction: row; margin-top:10%;">
-                        <button id="minusButton" style="margin-right: 2rem;" onclick="minus()">-</button>
+                        <button id="minusButton" class="btn-min" onclick="minus()">-</button>
                         <h4 id="quantity">1</h4>
-                        <button id="plusButton" style="margin-left: 2rem;" onclick="plus()">+</button>
+                        <button id="plusButton" class="btn-plus" onclick="plus()">+</button>
                     </div>
                     <hr >
                     <div style="display: flex; flex-direction: row; margin-top:10%; margin-bottom:8%;">
                         <h4 style="margin-right:3rem;">Subtotal:</h4>
-                        <h4 id="subtotal">70000</h4>
+                        <h4 id="subtotal">4.80</h4>
                     </div>
                     <button onclick="window.location.href='cart-eng.html'" class="addToCartLogin">
                         Add To Cart
@@ -193,7 +188,7 @@
             }
             document.getElementById("quantity").innerHTML=quantity;
            
-            document.getElementById("subtotal").innerHTML=quantity*70000;
+            document.getElementById("subtotal").innerHTML=quantity*4.80;
         }
         function plus(){
             var q=document.getElementById("quantity").innerHTML;
@@ -204,7 +199,7 @@
                 console.log(quantity);
             }
             document.getElementById("quantity").innerHTML=quantity;
-            document.getElementById("subtotal").innerHTML=quantity*70000;
+            document.getElementById("subtotal").innerHTML=quantity*4.8;
         }
     </script>
 
