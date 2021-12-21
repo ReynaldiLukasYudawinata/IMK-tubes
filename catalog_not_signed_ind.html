@@ -25,8 +25,8 @@
                             <select class="searchdrop form-select" aria-label="Default select example">
                                 <option class="searchdrop-item" value="0" selected>Judul</option>
                                 <option class="searchdrop-item" value="1">Pengarang</option>
-                                <option class="searchdrop-item" value="2">Penerbit</option>
                                 <option class="searchdrop-item" value="3">ISBN</option>
+                                
                             </select>
                         </div>
                         <input class="searchinput border-start" aria-label="Search">
@@ -40,10 +40,10 @@
                             <a class="nav-link active" aria-current="page" href="#"><img class="mb-1 me-1" src="images/IND_small.png" alt="">IND</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link active" aria-current="page" href="home-not_signed-ind.html">Beranda</a>
+                            <a class="nav-link " aria-current="page" href="home-not_signed-ind.html">Beranda</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="catalog_not_signed_ind.html">Katalog</a>
+                            <a class="nav-link active" href="catalog_not_signed_ind.html">Katalog</a>
                         </li>
                         <li class="nav-item me-3">
                             <a class="nav-link" href="faq_signed_ind.html">FAQ</a>
@@ -58,19 +58,23 @@
        
         <section class="content" style="background-color: #f4ebe1; padding-bottom: 5%; padding-top: 3%; padding-left:15%; padding-right:15%;">
             <div class="contentAtas" style="height:10%; margin-bottom: 6rem;">
-                <h2 style="color: #4e4e4e;">Katalog</h2>
+                <h2 style="color: #4e4e4e;">Catalog</h2>
                 <div class="dropdownCatalog">
-                    <select class="searchdrop form-select" aria-label="Default select example" style="border-radius: 0.5rem; margin-left:700%;">
-                        <option class="searchdrop-item" value="0" selected>Berdasarkan Judul A-Z</option>
-                        <option class="searchdrop-item" value="1">Berdasarkan Judul Z-A</option>
-                        <option class="searchdrop-item" value="2">Berdasarkan Pengarang A-Z</option>
-                        <option class="searchdrop-item" value="3">Berdasarkan Pengarang Z-A</option>
-                        <option class="searchdrop-item" value="2">Berdasarkan Pengarang Menurun</option>
-                        <option class="searchdrop-item" value="3">Berdasarkan Rating Menaik</option>
+                    <select class="searchdrop form-select" aria-label="Default select example" style="border-radius: 0.5rem; margin-left:440%;" onchange="sort(this.value)">
+                        <option class="searchdrop-item" value="catalog_signed_eng.html" selected>Berdasarkan Rating Menurun</option>
+                        <option class="searchdrop-item" value="catalog_sort_rating_asc.html" >Berdasarkan Rating Menaik</option>
+                        <option class="searchdrop-item" value="catalog_sort_title_asc.html">Berdasarkan Judul A-Z</option>
+                        <option class="searchdrop-item" value="catalog_sort_title_desc.html" >Berdasarkan Judul Z-A</option>
+                        <option class="searchdrop-item" value="catalog_sort_author_asc.html" >Berdasarkan Pengarang A-Z</option>
+                        <option class="searchdrop-item" value="catalog_sort_author_desc.html" >Berdasarkan Pengarang Z-A</option>
                     </select>
                 </div>
             </div>
-            
+            <script>
+                function sort(value){
+                    window.location=value;
+                }
+            </script>
             <div class="container">
                 <div class="contentTengah" style="margin-bottom:6rem;">
                     <!-- Row 1 -->
@@ -248,7 +252,7 @@
             </div>
  
             <div class="contentBawah" style="height:10%;margin-bottom:6rem; color:black">
-                <div style="display: flex; flex-direction: row; margin-left:80%;">
+                <div style="display: flex; flex-direction: row; margin-left:70%;">
                     <p style="margin-right:2rem; margin-top:0.2rem;">Halaman 1</p>
                     <button type="button"  class="nextPage">
                         Halaman Berikutnya
