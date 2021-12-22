@@ -1,0 +1,125 @@
+<!doctype html>
+    <head lang="id">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/home-style.css">
+        <link rel="stylesheet" href="css/catalog.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>Catalog</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="#">
+                    <img src="images/logo.png" alt="" width="200">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex searchbar justify-content-end" style="width: 100%;">
+                        <div class="dropdown">
+                            <select class="searchdrop form-select" aria-label="Default select example">
+                                <option class="searchdrop-item" value="0" selected>Title</option>
+                                <option class="searchdrop-item" value="1" >Author</option>
+                                <option class="searchdrop-item" value="2">ISBN</option>
+                                
+                            </select>
+                        </div>
+                        <input class="searchinput border-start" aria-label="Search">
+                        <button class="searchbtn btn" type="button" onclick="location.href='catalog_searched_signed_eng.html'" ><i class="bi bi-search"></i></button>
+                    </form>
+                    <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-end fs-4" style="width: 100%; margin-right: 5%;">
+                        <li class="nav-item fs-5 mt-1">
+                            <a class="nav-link active" aria-current="page" href="#"><img class="mb-1 me-1" src="images/UK_flag_small.png" alt="">ENG</a>
+                        </li>
+                        <li class="nav-item fs-5 mt-1 me-5">
+                            <a class="nav-link" aria-current="page" href="catalog_not_signed_ind.html"><img class="mb-1 me-1" src="images/IND_small.png" alt="">IND</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link " aria-current="page" href="home-not_signed-eng.html">Home</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link active" href="catalog_not_signed_eng.html">Catalog</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="faq_signed_eng.html">FAQ</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="login-eng.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+       
+        <section class="content" style="background-color: #f4ebe1; padding-bottom: 5%; padding-top: 3%; padding-left:15%; padding-right:15%;">
+            <div class="contentAtas" style="height:10%; margin-bottom: 6rem;">
+                <h2 style="color: #4e4e4e;">Catalog</h2>
+                <div class="dropdownCatalog">
+                    <select class="searchdrop form-select" aria-label="Default select example" style="border-radius: 0.5rem; margin-left:700%;" onchange="sort(this.value)">
+                        <option class="searchdrop-item" value="catalog_signed_eng.html" selected>By Rating Desc</option>
+                        <option class="searchdrop-item" value="catalog_sort_rating_asc.html" >By Rating Asc</option>
+                        <option class="searchdrop-item" value="catalog_sort_title_asc.html">By Title A-Z</option>
+                        <option class="searchdrop-item" value="catalog_sort_title_desc.html" >By Title Z-A</option>
+                        <option class="searchdrop-item" value="catalog_sort_author_asc.html" >By Author A-Z</option>
+                        <option class="searchdrop-item" value="catalog_sort_author_desc.html" >By Author Z-A</option>
+                    </select>
+                </div>
+            </div>
+            <script>
+                function sort(value){
+                    window.location=value;
+                }
+            </script>
+            
+            
+            <div class="container">
+                <div class="contentTengah" style="margin-bottom:6rem;">
+                    <!-- Row 1 -->
+                    <div class="row-one" style="margin-left: auto; margin-right: auto;">
+                        <div style="display:flex;flex-direction: row; margin-bottom: 5rem;">
+                            <h1 style="margin-left: auto; margin-right: auto;color:#4e4e4e">Sorry, book not found.</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+            
+        </section>
+
+        
+        <footer class="text-center" style="width: 100%; height: 100%;">
+            <div class="row" style="height: 100%;">
+                <div class="col p-5 my-auto" style="border: #4e4e4e;">
+                    <h5>Copyright Toko Buku Pak John ™</h5>
+                </div>
+
+                <div class="col p-5" style="border: #4e4e4e; border-left-style: solid;">
+                    <h5>About Toko Buku Pak John</h5>
+                    <p>Open since 2021, we strive to give you the<br> best experience of online book shopping.<br>
+                        We hope to see you again</p>
+                </div>
+        
+                <div class="col p-5" style="border: #4e4e4e; border-left-style: solid;">
+                    <form>
+                        <h5>Follow Us</h5>
+                        <div style="text-decoration: none;">
+                            <a href="" class="social-medias me-3"><i class="bi bi-facebook"></i></a>
+                            <a href="" id="instagram" class="social-medias me-3" style="color: #b9338c;"><i class="bi bi-instagram"></i></a>
+                            <a href="" id="twitter" class="social-medias me-3" style="color: #50abf1;"><i class="bi bi-twitter"></i></a>
+                            <a href="" id="line" class="social-medias me-3" style="color: #00c300;"><i class="bi bi-line"></i></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </footer>
+        
+    
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    </body>
+</html>

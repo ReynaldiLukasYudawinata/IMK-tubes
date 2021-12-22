@@ -1,0 +1,113 @@
+.kotakBukuCaptain{
+    width: 35%;
+    height: 17rem;
+    background:white;
+    border-radius: 20px;
+    margin-top: 6rem;
+    margin-left: -11.5rem;
+}
+#captain{
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+.deskripsiCaptain{
+    margin-left: 1rem;
+    margin-top: 3rem;
+}
+.jumlahCaptain{
+    margin-left: 4rem;
+    margin-top: 5rem;
+}
+#tempatSampahCaptain{
+    margin-top: 9rem;
+    margin-left: -2rem;
+
+}
+
+.kotakBukuHarry{
+    width: 35%;
+    height: 17rem;
+    background:white;
+    border-radius: 20px;
+    margin-top: 26rem;
+    margin-left: -42rem;
+}
+#Harry{
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+.deskripsiHarry{
+    margin-left: 1rem;
+    margin-top: 3rem;
+}
+.jumlahHarry{
+    margin-left: 4rem;
+    margin-top: 5rem;
+}
+#tempatSampahHarry{
+    margin-top: 9rem;
+    margin-left: -2rem;
+
+}
+
+.belanja{
+    width: 31%;
+    height: 20rem;
+    background:white;
+    border-radius: 20px;
+    margin-top: 7rem;
+    margin-left: 20rem;
+}
+
+#shopSum{
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+#totalPrice{
+    margin-left: 2rem;
+    margin-top: 3rem;
+}
+#jumlahBuku{
+    margin-left: 10.8rem;
+    margin-top: -2.21rem;
+}
+#items{
+    margin-left: 11.8rem;
+    margin-top: -2.3rem;
+}
+#subtotal{
+    margin-left: 23rem;
+    margin-top: -2.3rem;
+}
+#titik{
+    margin-left: 1rem;
+}
+#totPri{
+    margin-left: 2rem;
+}
+#hargaAkhir{
+    margin-left: 23rem;
+    margin-top: -2.3rem;
+}
+#checkout{
+    margin-left: 30%;
+    margin-top: 3rem;
+}
+.btn-plus{
+    margin-left: 2rem;
+    background-color: #8f3771;
+    margin-right: 2rem; 
+    border: none; 
+    padding: 0 13px 0 13px; 
+    color: #FFF;
+    font-size: 2rem;
+}
+
+.btn-min{
+    background-color: #8f3771; 
+    margin-right: 2rem; 
+    border: none; 
+    padding: 0 15px 0 15px; 
+    color: #FFF;
+    font-size: 2rem;
+}

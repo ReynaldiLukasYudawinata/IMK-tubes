@@ -1,0 +1,141 @@
+.kotakPutih1{
+    width: 25%;
+    height: 21rem;
+    background:white;
+    border-radius: 20px;
+    margin-top: 6rem;
+    margin-left: 17rem;
+}
+#paymentMethod{
+    margin-top: 1rem;
+    margin-left: 29%;
+}
+#master{
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+#visa{
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.kotakPutih2{
+    width: 27%;
+    height: 21rem;
+    background:white;
+    border-radius: 20px;
+    margin-top: 6rem;
+    margin-left: 24rem;
+}
+#totalPayment{
+    margin-top: 0.5rem;
+    margin-left: 12rem;
+}
+#totalPrice{
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+#jumlahBuku{
+    margin-left: 10.5rem;
+    margin-top: -2.2rem;
+}
+#items{
+    margin-left: 12rem;
+    margin-top: -2.3rem;
+}
+#subtotal{
+    margin-left: 21rem;
+    margin-top: -2.15rem;
+}
+#tax {
+    margin-left: 2rem;
+}
+#nilaiTax{
+    margin-left: 21rem;
+    margin-top: -2.2rem;
+}
+#shippingFee{
+    margin-left: 2rem;
+}
+#nilaiFee{
+    margin-left: 21rem;
+    margin-top: -2.2rem;
+}
+#titik{
+    margin-left: 1rem;
+}
+#totPri{
+    margin-left: 2rem;
+}
+#hargaAkhir{
+    margin-left: 21rem;
+    margin-top: -2.2rem;
+}
+#buy{
+    margin-left: 9.5rem;
+    margin-top: 1.7rem;
+}
+#backToCart{
+    margin-top: 33rem;
+    margin-left: -49rem;
+}
+.modal-content{
+    margin-top: 17rem;
+    margin-left: 35rem;
+    border: 2px solid black;
+}
+.modal-content-sukses{
+    margin-top: 24rem;
+    margin-left: 43rem;
+    background-color: #fefefe;
+    border: 2px solid black;
+}
+#back{
+    margin-left: 11rem;
+    margin-top: 3rem;
+}
+#paymentSukses{
+    margin-left: 11rem;
+    margin-top: -3rem;
+}
+#ceklis{
+    margin-top: 5rem;
+}
+.modal-content-konfirmasi{
+    margin-top: 13rem;
+    margin-left: 32rem;
+    background-color: #fefefe;
+    border: 2px solid black;
+}
+#keseluruhanTengah{
+    margin-left: 13rem;
+    margin-top: 2rem;
+}
+#mastercard_id_check{
+    margin-left: 16rem;
+}
+#bca_icon{
+    margin-left: 3rem;
+}
+#kanan{
+    margin-left: 17rem;
+    margin-top: -7.5rem;
+}
+#perbatenan{
+    margin-top: 5rem;
+    margin-left: 2rem;
+}
+#kalimat_bawah_bca{
+    margin-left: 2rem;
+}
+#kalimatPanjang{
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+#cardholder{
+    margin-left: 1rem;
+}
+#baten{
+    margin-left: 18rem;
+    margin-top: 3rem;
+}
