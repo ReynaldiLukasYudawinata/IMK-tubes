@@ -80,7 +80,7 @@
                         <button id="buttonMinCaptain"  style="height: 2rem; background-color: #8f3771; color:white; width:2rem; border:none;" onclick="minusCaptain()"><i class="fa fa-minus"></i></button>
                         <h4 id="quantityCaptain" style="margin-left: 1rem; margin-right: 1rem; color: black;">1</h4>
                         <button id = "buttonPlusCaptain"  style="height: 2rem; background-color: #8f3771; color:white; width:2rem; border:none;" onclick="plusCaptain()"><i class="fa fa-plus"></i></button>
-                        <button id = "tempatSampahCaptain" style="  font-size:1.5rem; height: 2.5rem; background-color: #8f3771; color:white; width:2.5rem; border:none;" ><i class="fa fa-trash"></i></button>
+                        <button type="button" onclick="location.href='catalog_signed_eng.html'" id = "tempatSampahCaptain" style="  font-size:1.5rem; height: 2.5rem; background-color: #8f3771; color:white; width:2.5rem; border:none;" ><i class="fa fa-trash"></i></button>
                     </div>
                 </div>
                 <div class="belanja">
@@ -91,6 +91,10 @@
                     <h4 id="subtotal" style="color: black">$4.8</h4>
                     <h4 id="pajak" style="color: black; margin-left:2rem;">Pajak(10%):</h4>
                     <h4 id="hargaPajak" style="color: black">$0.48</h4>
+<<<<<<< Updated upstream
+=======
+                    <!-- <h4 id="titik" style="color: black">---------------------------------------------------------</h4> -->
+>>>>>>> Stashed changes
                     <hr style=" margin-left:1rem; margin-right:1rem; background-color:black;">
                     <h4 id="totPri" style="color: black">Total Price</h4>
                     <h4 id="hargaAkhir" style="color: black">$4.8</h4>
@@ -179,7 +183,7 @@
             tempPajak=strPajak.substring(1);
             pajak=parseFloat(tempPajak);
             console.log("pajak"+pajak);
-            document.getElementById("hargaAkhir").innerHTML=Math.round((subtotal+pajak)*100)/100;
+            document.getElementById("hargaAkhir").innerHTML="$"+Math.round((subtotal+pajak)*100)/100;
         }
         function setPajak(){
             str=document.getElementById("subtotal").innerHTML;

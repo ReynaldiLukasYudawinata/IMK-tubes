@@ -68,10 +68,10 @@
         </nav>
 
         <div class="content" style="background-color: #f4ebe1; padding-bottom: 5%; padding-top: 3%;">
-            <h1 style=" color: black; margin-left: 7rem;" >Keranjang</h1> 
-            <div style="display:flex; width: 100%; " >
+            <h1 style=" color: black; margin-left: 7rem; margin-bottom:-2rem;" >Keranjang</h1> 
+            <div style="display:flex; width: 100%; padding-left:10%; " >
                 
-                <div class="kotakBukuCaptain" style="display:flex; flex-direction: row">
+                <div class="kotakBukuCaptain" style="display:flex; flex-direction: row; width:38%;">
                     <img id= "captain" src="images/book-1.jpg" alt="captain underpants" width="130vw" height="180vh" >
                     <div class ="deskripsiCaptain" style="width: 40%;" >
                         <h4 style="color: black">Captain Underpants And The Attack Of The Talking Toilets</h4>
@@ -82,24 +82,28 @@
                         <button id="buttonMinCaptain"  style="height: 2rem; background-color: #8f3771; color:white; width:2rem; border:none;" onclick="minusCaptain()"><i class="fa fa-minus"></i></button>
                         <h4 id="quantityCaptain" style="margin-left: 1rem; margin-right: 1rem; color: black;">1</h4>
                         <button id = "buttonPlusCaptain"  style="height: 2rem; background-color: #8f3771; color:white; width:2rem; border:none;" onclick="plusCaptain()"><i class="fa fa-plus"></i></button>
-                        <button id = "tempatSampahCaptain" style="  font-size:1.5rem; height: 2.5rem; background-color: #8f3771; color:white; width:2.5rem; border:none;" ><i class="fa fa-trash"></i></button>
+                        <button type="button" onclick="location.href='catalog_signed_ind.html'" id = "tempatSampahCaptain" style="  font-size:1.5rem; height: 2.5rem; background-color: #8f3771; color:white; width:2.5rem; border:none;" ><i class="fa fa-trash"></i></button>
                     </div>
                 </div>
-                <div class="belanja">
+                <div class="belanja" style="">
+                   
                     <h3 id="shopSum" style="color: black">Rincian Belanja</h3>
                     <h4 id = "totalPrice" style="color: black">Total Harga (</h4>
-                    <h4 id = "jumlahBuku" style="color: black">1</h4>
-                    <h4 id="items" style="color: black"> Barang)</h4>
+                    <h4 id = "jumlahBuku" style="color: black; padding-left:0.5rem;">1</h4>
+                    <h4 id="items" style="color: black ; padding-left:0.5rem;"> Barang)</h4>
                     <h4 id="subtotal" style="color: black">Rp70000</h4>
                     <h4 id="pajak" style="color: black; margin-left:2rem;">Pajak(10%):</h4>
                     <h4 id="hargaPajak" style="color: black">Rp7000</h4>
-                    <h4 id="titik" style="color: black">---------------------------------------------------------</h4>
+
+                    <hr style=" margin-left:1rem; margin-right:1rem; background-color:black;">
+
                     <h4 id="totPri" style="color: black">Total Price</h4>
                     <h4 id="hargaAkhir" style="color: black">Rp77000</h4>
-                    <button id="checkout" style="background-color: fuchsia; font-size: x-large; border-radius: 13px;color: white; width: 15rem;" onclick="location.href='payment-eng.html'">Checkout</button>
+                    <button id="checkout" style="background-color:#8f3771; margin:0;margin-left:30%; margin-top:3%; border:none; font-size: x-large; border-radius: 13px;color: white; width: 15rem;" onclick="location.href='payment-eng.html'">Checkout</button>
+                   
                 </div>
             </div>
-            <button onclick="location.href='catalog_signed_eng.html'" type="button" style="background-color: #8f3771; border:none; border-radius: 0.5rem; padding:0.5rem; color:white; margin-left:7%;">Get More Book</button>
+            <button onclick="location.href='catalog_signed_ind.html'" type="button" style="background-color: #8f3771; border:none; border-radius: 0.5rem; padding:0.5rem; color:white; margin-left:7%;">Tambah Buku</button>
         </div>
 
         <footer class="text-center" style="width: 100%; height: 100%;">
@@ -141,7 +145,7 @@
                 console.log(quantity);
                 document.getElementById("quantityCaptain").innerHTML=quantity;
                 subtotal=(quantity*70000);
-                document.getElementById("subtotal").innerHTML= "$"+ Math.round(subtotal * 10) / 10
+                document.getElementById("subtotal").innerHTML= "Rp"+ Math.round(subtotal * 10) / 10
             }
             else{
                 //modal
@@ -158,7 +162,7 @@
                 console.log(quantity);
                 document.getElementById("quantityCaptain").innerHTML=quantity;
                 subtotal=(quantity*70000);
-                document.getElementById("subtotal").innerHTML= "$"+ Math.round(subtotal * 10) / 10;
+                document.getElementById("subtotal").innerHTML= "Rp"+ Math.round(subtotal * 10) / 10;
             }
             else{
                 //modal
@@ -173,22 +177,22 @@
         }
         function setTotal(){
             strSub=document.getElementById("subtotal").innerHTML;
-            tempSub=strSub.substring(1);
+            tempSub=strSub.substring(2);
             subtotal=parseFloat(tempSub);
 
 
             strPajak=document.getElementById("hargaPajak").innerHTML;
-            tempPajak=strPajak.substring(1);
+            tempPajak=strPajak.substring(2);
             pajak=parseFloat(tempPajak);
             console.log("pajak"+pajak);
-            document.getElementById("hargaAkhir").innerHTML=Math.round((subtotal+pajak)*100)/100;
+            document.getElementById("hargaAkhir").innerHTML="Rp"+Math.round((subtotal+pajak)*100)/100;
         }
         function setPajak(){
             str=document.getElementById("subtotal").innerHTML;
-            tempSub=str.substring(1);
+            tempSub=str.substring(2);
             subtotal=parseFloat(tempSub);
             //console.log("subtotal"+subtotal);
-            document.getElementById("hargaPajak").innerHTML= "$"+Math.round(0.1*subtotal*100)/100;
+            document.getElementById("hargaPajak").innerHTML= "Rp"+Math.round(0.1*subtotal*100)/100;
         }
     </script>
 </html>
