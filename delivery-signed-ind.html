@@ -1,39 +1,13 @@
 <!doctype html>
-    <head lang="en">
+    <head lang="id">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/transaction_history-style.css">
+        <link rel="stylesheet" href="css/home-style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-        <title>Sejarah Transaksi</title>
+        <title>Beranda</title>
     </head>
     <body>
-        <div id="modal" class="modal" tabindex="-1" style="color: black;">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content" style="background-color: #f8f4f4;">
-                <div class="modal-header">
-                  <h5 class="modal-title">Pilih Tanggal</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="d-flex flex-row">
-                        <div class="d-flex flex-column">
-                            <p>Dari:</p>
-                            <input type="date">
-                        </div>
-                        <div class="d-flex flex-column ms-auto">
-                            <p>Sampai:</p>
-                            <input type="date">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn" style="background-color: #8f3771; color: white;">Konfirmasi</button>
-                </div>
-              </div>
-            </div>
-        </div>
-
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand logo" href="home-signed-ind.html">
@@ -57,7 +31,7 @@
                     </form>
                     <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-end fs-4" style="width: 100%; margin-right: 5%;">
                         <li class="nav-item fs-5 mt-1">
-                            <a class="nav-link" aria-current="page" href="transaction_history-date_picked-eng.html"><img class="mb-1 me-1" src="images/UK_flag_small.png" alt="">ENG</a>
+                            <a class="nav-link" aria-current="page" href="delivery-signed-eng.html"><img class="mb-1 me-1" src="images/UK_flag_small.png" alt="">ENG</a>
                         </li>
                         <li class="nav-item fs-5 mt-1 me-5">
                             <a class="nav-link active" aria-current="page" href="#"><img class="mb-1 me-1" src="images/IND_small.png" alt="">IND</a>
@@ -66,10 +40,10 @@
                             <a class="nav-link" aria-current="page" href="home-signed-ind.html">Beranda</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="#">Katalog</a>
+                            <a class="nav-link" href="catalog_signed_eind.html">Katalog</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="#">FAQ</a>
+                            <a class="nav-link active" href="faq_signed_ind.html">FAQ</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -77,11 +51,11 @@
                             <i class="bi-person-circle ms-1"></i>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown"  style="background-color: #8f3771;">
-                                <li><a class="menudrop-item dropdown-item" href="#" style="color: white;">Akun saya</a></li>
+                                <li><a class="menudrop-item dropdown-item" href="profile_sebelum_edit_ind.html" style="color: white;">Akun saya</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="menudrop-item dropdown-item" href="#" style="color: white;">Keranjang saya</a></li>
+                                <li><a class="menudrop-item dropdown-item" href="cart-ind.html" style="color: white;">Keranjang saya</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="menudrop-item dropdown-item" href="#" style="color: white;">Transaksi Pembelian</a></li>
+                                <li><a class="menudrop-item dropdown-item" href="transaction_history-date_not_picked-ind.html" style="color: white;">Transaksi Pembelian</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="menudrop-item dropdown-item" href="home-not_signed-ind.html" style="color: white;">Keluar</a></li>
                             </ul>
@@ -91,32 +65,36 @@
             </div>
         </nav>
         
-        <div class="card" style="color: black; background-color: #f4ebe1; height: 95vh;">
-            <div class="card-body">
-                <div class="d-flex flex-row">
-                    <h2 style="margin-top: 3vh; margin-left: 42%;">Sejarah Transaksi</h2>
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#modal" class="transaction-date">2 March 2021 - 1 December 2021</button>
-                </div>
-                <div class="card mx-auto" style="color: black; background-color: white; width: 70%; height: 70vh; margin-top: 3vh; border-radius: 2em;">
-                    <div class="card-body d-flex flex-column">
-                        <div class="d-flex flex-row">
-                            <img src="images/book-3.jpg" alt="" style="width: 15%; margin-left: 2%; margin-top: 1%;">
-                            <div class="d-flex flex-column" style="margin-left: 2%; margin-top: 9%;">
-                                <p class="transaction-details">Scooby-Doo Team-Up</p>
-                                <p class="transaction-details">1 buah</p>
-                            </div>
-                            <div class="transaction-total">
-                                <p>21 March 2021</p>
-                                <p>ID: 1528017024</p>
-                                <p>Total: Rp. 120.000,00</p>
+        <div class="card" style="color: black; background-color: #f4ebe1; height: 85vh;">
+            <div class="card-body d-flex flex-column">
+                <h2 class="mx-auto my-5">Pengiriman</h2>
+                <div class="accordion accordion-flush mx-auto" id="accordionPanelsStayOpenExample" style="width: 50%;">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" style="background-color: #f4ebe1;">
+                            Jasa pengiriman apa yang digunakan oleh toko?
+                        </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body" style="background-color: #f4ebe1;">
+                            <div class="ms-5">
+                                Jasa pengiriman yang kami gunakan untuk pengiriman ke US adlah fedex dan untuk pengiriman nasional digunakan Si Cepat
                             </div>
                         </div>
-                        <div class="d-flex flex-row">
-                            <img src="images/book-4.jpg" alt="" style="width: 15%; margin-left: 2%; margin-top: 1%;">
-                            <div class="d-flex flex-column" style="margin-left: 2%; margin-top: 9%;">
-                                <p class="transaction-details">The Epic Origin of Super Potato: Book 1</p>
-                                <p class="transaction-details">1 buah</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo" style="background-color: #f4ebe1;">
+                            Berapa lama pengiriman berlangsung?
+                        </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body" style="background-color: #f4ebe1;">
+                            <div class="ms-5">
+                                Pengiriman ke US biasanya berlangsung selama 2 minggu, dan pengiriman nasional baisanya berlangsung 3 sampai 5 hari.
                             </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -152,10 +130,5 @@
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-        <script>
-            var btn = document.getElementById('transaction-date')
-            var modal = document.getElementById('modal')
-            btn
-        </script>
     </body>
 </html>

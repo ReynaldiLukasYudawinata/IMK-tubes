@@ -1,0 +1,303 @@
+<!doctype html>
+    <head lang="id">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/home-style.css">
+        <link rel="stylesheet" href="css/catalog.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>Catalog</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="home-not_signed-eng.html">
+                    <img src="images/logo.png" alt="" width="200">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex searchbar justify-content-end" style="width: 100%;">
+                        <div class="dropdown">
+                            <select class="searchdrop form-select" aria-label="Default select example">
+                                <option class="searchdrop-item" value="0" selected>Title</option>
+                                <option class="searchdrop-item" value="1">Author</option>
+                                <option class="searchdrop-item" value="2">ISBN</option>
+                               
+                            </select>
+                        </div>
+                        <input class="searchinput border-start" aria-label="Search">
+                        <button class="searchbtn btn" type="button" onclick="location.href='catalog_searched_signed_eng.html'" ><i class="bi bi-search"></i></button>
+                    </form>
+                    <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-end fs-4" style="width: 100%; margin-right: 5%;">
+                        <li class="nav-item fs-5 mt-1">
+                            <a class="nav-link active" aria-current="page" href="#"><img class="mb-1 me-1" src="images/UK_flag_small.png" alt="">ENG</a>
+                        </li>
+                        <li class="nav-item fs-5 mt-1 me-5">
+                            <a class="nav-link" aria-current="page" href="#"><img class="mb-1 me-1" src="images/IND_small.png" alt="">IND</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link " aria-current="page" href="home-not_signed-eng.html">Home</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link active" href="catalog_not_signed_eng.html">Catalog</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="faq_signed_eng.html">FAQ</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="login-eng.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+       
+        <section class="content" style="background-color: #f4ebe1; padding-bottom: 5%; padding-top: 3%; padding-left:15%; padding-right:15%;">
+            <div class="contentAtas" style="height:10%; margin-bottom: 6rem;">
+                <h2 style="color: #4e4e4e;">Catalog</h2>
+                <div class="dropdownCatalog">
+                    <select class="searchdrop form-select" aria-label="Default select example" style="border-radius: 0.5rem; margin-left:700%;" onchange="sort(this.value)">
+                        <option class="searchdrop-item" value="catalog_signed_eng.html" selected>By Rating Desc</option>
+                        <option class="searchdrop-item" value="catalog_sort_rating_asc.html" >By Rating Asc</option>
+                        <option class="searchdrop-item" value="catalog_sort_title_asc.html">By Title A-Z</option>
+                        <option class="searchdrop-item" value="catalog_sort_title_desc.html" >By Title Z-A</option>
+                        <option class="searchdrop-item" value="catalog_sort_author_asc.html" >By Author A-Z</option>
+                        <option class="searchdrop-item" value="catalog_sort_author_desc.html" >By Author Z-A</option>
+                    </select>
+                </div>
+            </div>
+            <script>
+                function sort(value){
+                    window.location=value;
+                }
+            </script>
+
+            <div class="container">
+                <div class="contentTengah" style="margin-bottom:6rem;">
+                    <!-- Row 1 -->
+                    <div class="row-one" style="margin-left: auto; margin-right: auto;">
+                        <div style="display:flex;flex-direction: row; margin-bottom: 5rem;">
+                            <div class="card catalog-cards mx-4" onclick="location.href='book_details_not_signed_front_eng.html'">
+                                <img src="images/theGreatGatsby.jpg" class="card-img-top mx-auto" alt="...">
+                                <h5 class="card-header card-title d-flex catalog-title align-items-center justify-content-center text-center" style="margin-bottom: 0;">The Great Gatsby</h5>
+                                <div class="card-body book-desc">
+                                    <p class="card-text">By: F. Scott Fitzgerald</p>
+                                    <p class="card-text">Publisher: Diandra Primamitra</p>
+                                    <p class="card-text">Genre: Historical, Fiction</p>
+                                    <p class="card-text book-price">$ 4.80</p>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <p class="card-text"><i class="bi bi-star-fill"></i> 3.5 | Sold: 6</p>
+                                </div>
+                            </div>
+                            <div class="card catalog-cards mx-4">
+                                <img src="images/theCatcherInTheRye.jpg" class="card-img-top mx-auto" alt="...">
+                                <h5 class="card-header card-title d-flex catalog-title align-items-center justify-content-center text-center" style="margin-bottom: 0;">The Catches in the Rye</h5>
+                                <div class="card-body book-desc">
+                                    <p class="card-text">By: J. D. Salinger</p>
+                                    <p class="card-text">Publisher: Banana</p>
+                                    <p class="card-text">Genre: Realistic fiction</p>
+                                    <p class="card-text book-price">$ 6.96</p>
+                                    
+                                </div>
+                                <div class="card-footer text-center">
+                                    <p class="card-text"><i class="bi bi-star-fill"></i> 3.5 | Sold: 151</p>
+                                </div>
+                            </div>
+                            <div class="card catalog-cards mx-4">
+                                <img src="images/catch22.jpg" class="card-img-top mx-auto" alt="...">
+                                <h5 class="card-header card-title d-flex catalog-title align-items-center justify-content-center text-center" style="margin-bottom: 0;">Catch-22</h5>
+                                <div class="card-body book-desc">
+                                    <p class="card-text">By: Joseph Heller</p>
+                                    <p class="card-text">Publisher: Simon & Schuster </p>
+                                    <p class="card-text">Genre: Dark comedy</p>
+                                    <p class="card-text book-price">$ 4.87</p>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <p class="card-text"><i class="bi bi-star-fill"></i> 3.4 | Sold: 35</p>
+                                </div>
+                            </div>
+                            <div class="card catalog-cards mx-4">
+                                <img src="images/APassageToIndia.jpg" class="card-img-top mx-auto" alt="...">
+                                <h5 class="card-header card-title d-flex catalog-title align-items-center justify-content-center text-center" style="margin-bottom: 0;">A Passage To India</h5>
+                                <div class="card-body book-desc">
+                                    <p class="card-text">By: E.M Forster</p>
+                                    <p class="card-text">Publisher: J.M Dent</p>
+                                    <p class="card-text">Genre: Fiction</p>
+                                    <p class="card-text book-price">$ 3.48</p>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <p class="card-text"><i class="bi bi-star-fill"></i> 3.4 | Sold: 100</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row 2 -->
+                    <div style="display:flex;flex-direction: row;  margin-bottom: 5rem;">
+                        <div class="card catalog-cards mx-4">
+                            <img src="images/ulysses.jpg" class="card-img-top mx-auto" alt="...">
+                            <h5 class="card-header card-title d-flex catalog-title align-items-center justify-content-center text-center" style="margin-bottom: 0;">Ulysses</h5>
+                            <div class="card-body book-desc">
+                                <p class="card-text">By: James Joyce</p>
+                                <p class="card-text">Publisher: Erlangga</p>
+                                <p class="card-text">Genre: Fiction</p>
+                                <p class="card-text book-price">$ 6.70</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <p class="card-text"><i class="bi bi-star-fill"></i> 3.2 | Sold: 200</p>
+                            </div>
+                        </div>
+                        <div class="card catalog-cards mx-4">
+                            <img src="images/warAndPeace.jpg" class="card-img-top mx-auto" alt="...">
+                            <h5 class="card-header card-title d-flex catalog-title align-items-center justify-content-center text-center" style="margin-bottom: 0;">War and Peace</h5>
+                            <div class="card-body book-desc">
+                                <div class="align-middle">
+                                    <p class="card-text">By: Leo Tolstoy</p>
+                                    <p class="card-text">Publisher: Knopf Doubleday Publishing Group</p>
+                                    <p class="card-text">Genre: War story</p>
+                                    <p class="card-text book-price">$ 6.5</p>
+                                </div>
+                                
+                            </div>
+                            <div class="card-footer text-center">
+                                <p class="card-text"><i class="bi bi-star-fill"></i> 3.2 | Sold: 150</p>
+                            </div>
+                        </div>
+                        <div class="card catalog-cards mx-4">
+                            <img src="images/asILayDying.jpg" class="card-img-top mx-auto" alt="...">
+                            <h5 class="card-header card-title d-flex catalog-title align-items-center justify-content-center text-center" style="margin-bottom: 0;">As I Lay Dying</h5>
+                            <div class="card-body book-desc">
+                                <p class="card-text">By: William Faulkner</p>
+                                <p class="card-text">Publisher: Vintage Books</p>
+                                <p class="card-text">Genre: Metalcore</p>
+                                <p class="card-text book-price">$ 6.65</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <p class="card-text"><i class="bi bi-star-fill"></i> 3.2 | Sold: 100</p>
+                            </div>
+                        </div>
+                        <div class="card catalog-cards mx-4">
+                            <img src="images/callOfTheWild.jpg" class="card-img-top mx-auto" alt="...">
+                            <h5 class="card-header card-title d-flex catalog-title align-items-center justify-content-center text-center" style="margin-bottom: 0;">The Call of The Wild</h5>
+                            <div class="card-body book-desc">
+                                <p class="card-text">By: Jack London</p>
+                                <p class="card-text">Publisher: Macmillan</p>
+                                <p class="card-text">Genre: Adventure fiction</p>
+                                <p class="card-text book-price">$ 6.99</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <p class="card-text"><i class="bi bi-star-fill"></i> 3.0 | Sold: 500</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row-3 -->
+                    <div style="display:flex;flex-direction: row;  margin-bottom: 5rem;">
+                        <div class="card catalog-cards mx-4">
+                            <img src="images/thePrimeOfMissJeanBrodie.jpg" class="card-img-top mx-auto" alt="...">
+                            <h5 class="card-header card-title d-flex catalog-title align-items-center justify-content-center text-center" style="margin-bottom: 0;">The Prime of Miss Jean Brodie</h5>
+                            <div class="card-body book-desc">
+                                <p class="card-text">By: Muriel Spark</p>
+                                <p class="card-text">Publisher: Macmillan</p>
+                                <p class="card-text">Genre: Psychological fiction</p>
+                                <p class="card-text book-price">$ 6.99</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <p class="card-text"><i class="bi bi-star-fill"></i> 3.0 | Sold: 350</p>
+                            </div>
+                        </div>
+                        <div class="card catalog-cards mx-4">
+                            <img src="images/theGoodSoldier.jpg" class="card-img-top mx-auto" alt="...">
+                            <h5 class="card-header card-title d-flex catalog-title align-items-center justify-content-center text-center" style="margin-bottom: 0;">The Good Soldier</h5>
+                            <div class="card-body book-desc">
+                                <p class="card-text">By: Ford Madox Hueffer</p>
+                                <p class="card-text">Publisher: John Lane</p>
+                                <p class="card-text">Genre: Domestic fiction</p>
+                                <p class="card-text book-price">$ 6.99</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <p class="card-text"><i class="bi bi-star-fill"></i> 2.9 | Sold: 350</p>
+                            </div>
+                        </div>
+                        <div class="card catalog-cards mx-4">
+                            <img src="images/slaughterhouse5.jpg" class="card-img-top mx-auto" alt="...">
+                            <h5 class="card-header card-title d-flex catalog-title align-items-center justify-content-center text-center" style="margin-bottom: 0;">Slaughterhouse-Five</h5>
+                            <div class="card-body book-desc">
+                                <p class="card-text">By: Kurt Vonnegut</p>
+                                <p class="card-text">Publisher: Delacorte</p>
+                                <p class="card-text">Genre: Dark comedy</p>
+                                <p class="card-text book-price">$ 6.75</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <p class="card-text"><i class="bi bi-star-fill"></i> 2.9 | Sold: 390</p>
+                            </div>
+                        </div>
+                        <div class="card catalog-cards mx-4">
+                            <img src="images/theSunAlsoRises.jpg" class="card-img-top mx-auto" alt="...">
+                            <h5 class="card-header card-title d-flex catalog-title align-items-center justify-content-center text-center" style="margin-bottom: 0;">The Sun Also Rises</h5>
+                            <div class="card-body book-desc">
+                                <p class="card-text">By: Ernest Hemingway</p>
+                                <p class="card-text">Publisher: Scribner's </p>
+                                <p class="card-text">Genre: Historical fiction</p>
+                                <p class="card-text book-price">$ 6.89</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <p class="card-text"><i class="bi bi-star-fill"></i> 2.8 | Sold: 370</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+ 
+
+            <div class="contentBawah" style="height:10%; margin-bottom:6rem; color:black">
+                <div style="display: flex; flex-direction: row; margin-left:70%;">
+                    <button class="nextPage" onclick="location.href='catalog_not_signed_eng.html'">
+                        Previous Page
+                    </button>
+                    <p style="margin-right:2rem;margin-left:2rem; margin-top:0.2rem;">Page 2</p>
+                    <button class="nextPage">
+                        Next Page
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+        
+        <footer class="text-center" style="width: 100%; height: 100%;">
+            <div class="row" style="height: 100%; width: 100%;">
+                <div class="col p-4 my-auto" style="border: #4e4e4e;">
+                    <h5>Copyright Toko Buku Pak John ™</h5>
+                </div>
+
+                <div class="col p-4" style="border: #4e4e4e; border-left-style: solid;">
+                    <h5>About Toko Buku Pak John</h5>
+                    <p>Open since 2021, we strive to give you the<br> best experience of online book shopping.<br>
+                        We hope to see you again</p>
+                </div>
+        
+                <div class="col p-4" style="border: #4e4e4e; border-left-style: solid;">
+                    <form>
+                        <h5>Follow Us</h5>
+                        <div style="text-decoration: none;">
+                            <a href="" class="social-medias me-3"><i class="bi bi-facebook"></i></a>
+                            <a href="" id="instagram" class="social-medias me-3" style="color: #b9338c;"><i class="bi bi-instagram"></i></a>
+                            <a href="" id="twitter" class="social-medias me-3" style="color: #50abf1;"><i class="bi bi-twitter"></i></a>
+                            <a href="" id="line" class="social-medias me-3" style="color: #00c300;"><i class="bi bi-line"></i></a>
+                            <a href="" id="whatsapp" class="social-medias me-3" style="color: #44c554;"><i class="bi bi-whatsapp"></i></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </footer>
+        
+    
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    </body>
+</html>
