@@ -80,31 +80,32 @@
                     <h4 id = "totalPrice" style="color: black">Total Price (</h4>
                     <h4 id = "jumlahBuku" style="color: black">2</h4>
                     <h4 id="items" style="color: black"> Items)</h4>
-                    <h4 id="subtotal" style="color: black">Rp 169.000,00</h4>
+                    <h4 id="subtotal" style="color: black">$11.8</h4>
                     <h4 id="tax" style="color: black">Tax (10%)</h4>
-                    <h4 id="nilaiTax" style="color: black">Rp 16.900,00</h4>
+                    <h4 id="nilaiTax" style="color: black">$1.18</h4>
                     <h4 id="shippingFee" style="color: black">Shipping Fee</h4>
-                    <h4 id="nilaiFee" style="color: black">Rp 10.000,00</h4>
-                    <h4 id="titik" style="color: black">---------------------------------------------------</h4>
+                    <h4 id="nilaiFee" style="color: black">$10</h4>
+                    <!-- <h4 id="titik" style="color: black">---------------------------------------------------</h4> -->
+                    <hr style=" margin-left:1rem; margin-right:1rem; background-color:black;">
                     <h4 id="totPri" style="color: black">Total Payment</h4>
-                    <h4 id="hargaAkhir" style="color: black">Rp 195.900,00</h4>
-                    <button id="buy" style="background-color: #8f3771; font-size: x-large; border-radius: 13px;color: white; width: 15rem;">Buy</button>
+                    <h4 id="hargaAkhir" style="color: black">$22.26</h4>
+                    <button id="buy" style=" border:none; background-color: #8f3771; font-size: x-large; border-radius: 13px;color: white; width: 15rem;">Buy</button>
                     <!-- The Modal -->
                     <div id="myModal" class="modal">
                         <!-- Modal content -->
                         <div class="modal-content" style="width: 50%; height: 45%; border-radius: 13px;">
                             <span class="close">&times;</span>
                             <label for="fname" style="color: black; text-align: center; font-size: larger;">Card Number </label>
-                            <input type="text" id="fname" name="fname" placeholder="Enter Card Number" style="text-align: center;"><br>
+                            <input type="text" id="a" name="fname" placeholder="Enter Card Number" style="text-align: center;"><br>
                             <label for="lname" style="color: black; text-align: center; font-size: larger;">Security Code </label>
-                            <input type="text" id="lname" name="lname" placeholder="Enter Security Code" style="text-align: center;"><br>
+                            <input type="text" id="b" name="lname" placeholder="Enter Security Code" style="text-align: center;"><br>
                             <label for="fname" style="color: black; text-align: center; font-size: larger;">Card Holder Name </label>
-                            <input type="text" id="fname" name="fname" placeholder="Enter Card Holder Name" style="text-align: center;"><br>
+                            <input type="text" id="c" name="fname" placeholder="Enter Card Holder Name" style="text-align: center;"><br>
                             <label for="lname" style="color: black; text-align: center; font-size: larger;">Card Expiration Date </label>
-                            <input type="text" id="lname" name="lname" placeholder="Enter Card Expiration Date" style="text-align: center;"><br>
+                            <input type="text" id="d" name="lname" placeholder="Enter Card Expiration Date" style="text-align: center;"><br>
                             <div id="baten">
-                                <button id="confirm" style="background-color: #8f3771; font-size: x-large; border-radius: 13px;color: white; width: 15rem;" >Confirm</button>
-                                <button id="back2" style="background-color: #8f3771; font-size: x-large; border-radius: 13px;color: white; width: 15rem; "onclick="location.href = 'payment-eng.html'" >Back</button>
+                                <button id="confirm" style="background-color: #15970a; font-size: x-large; border-radius: 13px;color: white; width: 15rem; border:none;" >Confirm</button>
+                                <button id="back2" style="background-color: #c40c0c; font-size: x-large; border-radius: 13px;color: white; width: 15rem;  border:none;"onclick="location.href = 'payment-eng.html'" >Back</button>
                             </div>
                             
                         </div>
@@ -116,9 +117,9 @@
                         <!-- Modal content -->
                         <div class="modal-content-sukses" style="width: 30%; height: 25%; border-radius: 13px;">
                             <span class="close2">&times;</span>
-                            <i id = "ceklis" class="fa fa-check fa-4x" style="color: yellow;"></i>
+                            <i id = "ceklis" class="fa fa-check fa-4x" style="color: #15970a;"></i>
                             <h4 id="paymentSukses" style="color: black; font-size: x-large;">Payment Successful</h4>
-                            <button id="back" style="background-color: #8f3771; font-size: x-large; border-radius: 13px;color: white; width: 15rem;" onclick="location.href = 'payment-eng.html' ">Back</button>
+                            <button id="back" style="background-color: #8f3771; font-size: x-large; border-radius: 13px;color: white; width: 15rem; border:none;" onclick="location.href = 'catalog_signed_eng.html' ">Back</button>
                         </div>
                     </div>
 
@@ -129,7 +130,7 @@
                             <span class="close3">&times;</span>
                             <i id = "ceklis" class="fa fa-close fa-4x" style="color: red;"></i>
                             <h4 id="paymentSukses" style="color: black; font-size: x-large;">Payment Failed</h4>
-                            <button id="back" style="background-color: #8f3771; font-size: x-large; border-radius: 13px;color: white; width: 15rem;" onclick="location.href = 'payment-eng.html' ">Back</button>
+                            <button id="back" style="background-color: #8f3771; font-size: x-large; border-radius: 13px;color: white; width: 15rem; border:none" onclick="location.href = 'payment-eng.html' ">Back</button>
                         </div>
                     </div>
 
@@ -158,12 +159,12 @@
                                     <label id="harga" style="color: black;">: IDR 195.900,00</label><br>
                                     <label id="tanggalKanan" style="color: black;">: Wednesday, 15 December 2021</label><br>
                                     <label id="nomorKanan" style="color: black;">: 1234567891012</label><br>
-                                    <input type="text" id="pin" name="lname" placeholder="Enter Authentication Code">
+                                    <input type="password" style="width:50%;" id="pin" name="lname" placeholder="Enter Authentication Code">
                                 </div>
                                 <div id="perbatenan">
-                                    <button id="cancel" style="background-color: #8f3771; font-size: x-large; border-radius: 13px;color: white; width: 11rem;" onclick="location.href = 'payment-eng.html' ">Cancel</button>
-                                    <button id="resend" style="background-color: #8f3771; font-size: x-large; border-radius: 13px;color: white; width: 11rem;">Resend Code</button>
-                                    <button id="ok" style="background-color: #8f3771; font-size: x-large; border-radius: 13px;color: white; width: 11rem;" onclick="location.href = 'payment-eng.html' ">OK</button>
+                                    <button id="cancel" style="background-color: #c40c0c; font-size: x-large; border-radius: 13px;color: white; width: 11rem; border:none" onclick="location.href = 'payment-eng.html' ">Cancel</button>
+                                    <button id="resend" style="background-color: #8f3771; font-size: x-large; border-radius: 13px;color: white; width: 11rem; border:none">Resend Code</button>
+                                    <button id="ok" style="background-color: #15970a;; font-size: x-large; border-radius: 13px;color: white; width: 11rem; border:none" onclick="location.href = 'payment-eng.html' ">OK</button>
                                 </div>
                                 
                             </div>
@@ -173,7 +174,7 @@
 
                 </div>
                 <div>
-                    <button id="backToCart" style="background-color: #8f3771; font-size: x-large; border-radius: 13px;color: white; width: 15rem;">Back to Cart</button>
+                    <button id="backToCart" style=" border:none; background-color: #8f3771; font-size: x-large; border-radius: 13px;color: white; width: 15rem;">Back to Cart</button>
                 </div>
                 
             </div>
@@ -215,7 +216,7 @@
 
 
         function master() {
-            document.getElementById("master").style.border = "3px dotted fuchsia";
+            document.getElementById("master").style.border = "3px solid #8f3771";
 
             document.getElementById("visa").style.border = "none";
 
@@ -224,7 +225,7 @@
             document.getElementById("mastercard_id_check").src = "images/master_card_id_check.png";
         }
         function visa() {
-            document.getElementById("visa").style.border = "3px dotted fuchsia";
+            document.getElementById("visa").style.border = "3px solid #8f3771";
 
             // if (document.getElementById("visa").style.border  == "3px dotted fuchsia" ){
             // document.getElementById("visa").style.border = 'none';
@@ -236,7 +237,7 @@
                 
             dipilih = "visa";
 
-            document.getElementById("mastercard_id_check").src ="images/visa_secure.jpg";
+            document.getElementById("mastercard_id_check").src ="images/veesa_secure.jpg";
         }
 
         // Get the modal
@@ -331,8 +332,28 @@
         var btn4 = document.getElementById("confirm");
 
         btn4.onclick = function() {
-        modal.style.display = "none";
-        modal4.style.display = "block";
+            var nomorKartu=document.getElementById("a").value;
+            var pemegang=document.getElementById("b").value;
+            var security=document.getElementById("c").value;
+            var tanggalKadaluarsa=document.getElementById("d").value;
+            console.log(nomorKartu);
+            if(nomorKartu==""){
+                alert("Enter card number");
+            }
+            else if(pemegang==""){
+                alert("Enter cardholder name")
+            }
+            else if(security==""){
+                alert("Enter security code");
+            }
+            else if(tanggalKadaluarsa==""){
+                alert("Enter Expiration date");
+            }
+            else{
+                modal.style.display = "none";
+                 modal4.style.display = "block";
+            }
+       
         }
 
         

@@ -142,7 +142,7 @@
                     <hr >
                     <div style="display: flex; flex-direction: row; margin-top:10%; margin-bottom:8%;">
                         <h4 style="margin-right:3rem;">Subtotal:</h4>
-                        <h4 id="subtotal">4.80</h4>
+                        <h4 id="subtotal">$4.80</h4>
                     </div>
                     <button onclick="window.location.href='cart_captain_eng.html'" class="addToCartLogin">
                         Add To Cart
@@ -194,7 +194,7 @@
             }
             document.getElementById("quantity").innerHTML=quantity;
            
-            document.getElementById("subtotal").innerHTML=quantity*4.80;
+            document.getElementById("subtotal").innerHTML="$"+Math.round(quantity*4.8*100)/100;
         }
         function plus(){
             var q=document.getElementById("quantity").innerHTML;
@@ -205,7 +205,7 @@
                 console.log(quantity);
             }
             document.getElementById("quantity").innerHTML=quantity;
-            document.getElementById("subtotal").innerHTML=quantity*4.8;
+            document.getElementById("subtotal").innerHTML="$"+Math.round(quantity*4.8*100)/100;
         }
     </script>
 

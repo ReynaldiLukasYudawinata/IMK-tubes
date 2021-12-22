@@ -70,50 +70,19 @@
             <div style="display:flex; width: 100%; " >
                 <h1 style="text-align: center; color: black; margin-left: 7rem;" >Cart</h1> 
                 
-                <div class="kotakBukuCaptain" style="display:flex; flex-direction: row">
-                    <img id= "captain" src="images/book-1.jpg" alt="captain underpants" width="130vw" height="180vh" >
 
-                    <div class ="deskripsiCaptain" style="width: 40%;" >
-                        <h4 style="color: black">Captain Underpants And The Attack Of The Talking Toilets</h4>
-                        <h5 style="color: black">By: Dav Pilky</h5>
-                        <h5 style="color: black">Rp. 69.000,00</h5>
-                    </div>
-
-                    <div class = "jumlahCaptain" style=" display:flex; flex-direction: row">
-                        <button id="buttonMinCaptain" style="background-color: #8f3771; height: 2rem; border: none;" onclick="minusCaptain()"><i class="fa fa-minus-circle" style="color: #FFF;"></i></button>
-                        <h4 id="quantityCaptain" style="margin-left: 1rem; margin-right: 1rem; color: black;">1</h4>
-                        <button id = "buttonPlusCaptain" style="background-color: #8f3771; height: 2rem; border: none; height: 2rem;" onclick="plusCaptain()"><i class="fa fa-plus-circle" style="color: #FFF;"></i></button>
-                        <button id = "tempatSampahCaptain" style="background-color: #8f3771; height: 2rem; border: none; height: 2rem;" onclick="plus()"><i class="fa fa-trash" style="color: #FFF;"></i></button>
-                    </div>
-                </div>
-
-                <div class="kotakBukuHarry" style="display:flex; flex-direction: row">
-                    <img id= "Harry" src="images/book-2.jpg" alt="heri potter" width="130vw" height="180vh" >
-
-                    <div class ="deskripsiCaptain" style="width: 40%;" >
-                        <h4 style="color: black">Harry Potter And The Sorcerer's Stone</h4>
-                        <h5 style="color: black">By: J.K. Rowling</h5>
-                        <h5 style="color: black">Rp. 100.000,00</h5>
-                    </div>
-
-                    <div class = "jumlahHarry" style=" display:flex; flex-direction: row">
-                        <button id="buttonMinHarry" style="background-color: #8f3771; height: 2rem; border: none;" onclick="minusHarry()"><i class="fa fa-minus-circle" style="color: #FFF;"></i></button>
-                        <h4 id="quantityHarry" style="margin-left: 1rem; margin-right: 1rem; color: black;">1</h4>
-                        <button id = "buttonPlusHarry" style="background-color: #8f3771; height: 2rem; border: none;" onclick="plusHarry()"><i class="fa fa-plus-circle" style="color: #FFF;"></i></button>
-                        <button id = "tempatSampahHarry" style="background-color: #8f3771; height: 2rem; border: none;" onclick="plus()"><i class="fa fa-trash" style="color: #FFF;"></i></button>
-                    </div>
-                </div>
-
-                <div class="belanja">
+                <div class="belanja" style="margin-left:50%;">
                     <h3 id="shopSum" style="color: black">Shopping Summary</h3>
                     <h4 id = "totalPrice" style="color: black">Total Price (</h4>
-                    <h4 id = "jumlahBuku" style="color: black">2</h4>
+                    <h4 id = "jumlahBuku" style="color: black">0</h4>
                     <h4 id="items" style="color: black"> Items)</h4>
-                    <h4 id="subtotal" style="color: black">Rp 169.000,00</h4>
-                    <h4 id="titik" style="color: black">---------------------------------------------------------</h4>
+                    <h4 id="subtotal" style="color: black">$0</h4>
+                    <h4 id="pajak" style="color: black; margin-left:2rem;">Tax(10%):</h4>
+                    <h4 id="hargaPajak" style="color: black">$0</h4>
+                    <hr style=" margin:0; margin-top:1rem; margin-bottom:1rem; margin-left:1rem; margin-right:1rem; background-color:black;">
                     <h4 id="totPri" style="color: black">Total Price</h4>
-                    <h4 id="hargaAkhir" style="color: black">Rp 169.000,00</h4>
-                    <button id="checkout" style="background-color: #8f3771; border: none; font-size: x-large; border-radius: 13px;color: white; width: 15rem;" onclick="location.href='payment-eng.html'">Checkout</button>
+                    <h4 id="hargaAkhir" style="color: black">$0</h4>
+                    <button id="checkout" style="margin:0;margin-left:25%;margin-top:3%; border:none; background-color:#8f3771; font-size: x-large; border-radius: 13px;color: white; width: 15rem;" >Checkout</button>
                 </div>
             </div>
         </div>
