@@ -89,6 +89,10 @@
     margin-left: 23rem;
     margin-top: -2.3rem;
 }
+#hargaPajak{
+    margin-left: 23rem;
+    margin-top: -2.3rem;
+}
 #checkout{
     margin-left: 30%;
     margin-top: 3rem;
@@ -97,4 +101,23 @@
 .btn-plus-min-remove{
     background-color: #8f3771;
     
+}
+
+.btn-plus{
+    margin-left: 2rem;
+    background-color: #8f3771;
+    margin-right: 2rem; 
+    border: none; 
+    padding: 0 13px 0 13px;
+    color: #FFF;
+    font-size: 2rem;
+}
+
+.btn-min{
+    background-color: #8f3771; 
+    margin-right: 2rem; 
+    border: none; 
+    padding: 0 15px 0 15px; 
+    color: #FFF;
+    font-size: 2rem;
 }
