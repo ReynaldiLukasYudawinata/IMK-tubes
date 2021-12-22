@@ -52,17 +52,17 @@
                 <h3 >
                     Email
                 </h3>
-                <input type="text" class="it-login" placeholder=" Masukan Email " style="border-radius: 5px; width: 100%; height: 9%; font-size: 1.25rem; margin-bottom: 7%;">
+                <input id="email" type="text" class="it-login" placeholder=" Masukan Email " style="border-radius: 5px; width: 100%; height: 9%; font-size: 1.25rem; margin-bottom: 7%;">
                 
                 <h3 >
                     Kata Sandi
                 </h3>
-                <input type="password" class="it-login" placeholder=" Masukan Password " style="border-radius: 5px; width: 100%; height: 9%; font-size: 1.25rem; margin-bottom: 7%;">
+                <input id="pass" type="password" class="it-login" placeholder=" Masukan Password " style="border-radius: 5px; width: 100%; height: 9%; font-size: 1.25rem; margin-bottom: 7%;">
 
                 <h4 style="font-size: 1rem; text-align: center; margin-bottom: 7%;">
-                    Lupa kata sandi?
+
                 </h4>
-                <Button onclick="window.location.href='home-signed-ind.html'">
+                <Button onclick="login()">
                     Masuk
                 </Button>
                 <br> <br> <br>
@@ -74,7 +74,7 @@
             <div id="failedlogin" class="w3-modal">
                 <div class="w3-modal-content" style="padding-top: 5rem; padding-bottom: 5rem; width: 40rem; top:30%; border-radius: 10px; background-color: #313131;">
                     <div class="w3-container">
-                        <span onclick="document.getElementById('failedSignUp').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                        <span onclick="document.getElementById('failedlogin').style.display='none'" class="w3-button w3-display-topright">&times;</span>
                         <div class="w3-container">
                             <div class="w3-row">
                                 <div class="w3-container w3-third w3-center" style="transform: translateY(10%);">
@@ -82,6 +82,7 @@
                                 </div>
                                 <div class="w3-container w3-twothird w3-left">
                                     <h2 style="color: #FFF; font-size: 3rem;">Login Gagal!</h2>
+                                    <h3 id="reason"></h3>
                                 </div>
                             </div>
                         </div>    
@@ -89,7 +90,25 @@
                 </div>
             </div>
            
-
+            <script>
+                function login(){
+                    if(document.getElementById("email").value==""){
+                        document.getElementById("reason").innerHTML="Email tidak dimasukan";
+                        document.getElementById("failedlogin").style.display="block";
+                    }
+                    else if(document.getElementById("pass").value==""){
+                          document.getElementById("reason").innerHTML="Kata sandi tidak dimasukan";
+                          document.getElementById("failedlogin").style.display="block";
+                    }
+                    else if(document.getElementById("pass").value=="a"){
+                          document.getElementById("reason").innerHTML="Kata sandi salah";
+                          document.getElementById("failedlogin").style.display="block";
+                    }
+                    else{
+                        location.href="catalog_signed_ind.html"
+                    }
+                }
+            </script>
         </div>
         <footer class="text-center" style="width: 100%; height: 100%;">
             <div class="row" style="height: 100%; width: 100%;">

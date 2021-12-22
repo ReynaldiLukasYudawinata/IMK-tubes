@@ -122,8 +122,9 @@
     margin-top: -7.5rem;
 }
 #perbatenan{
-    margin-top: 5rem;
+    margin-top: 2rem;
     margin-left: 2rem;
+    border:none;
 }
 #kalimat_bawah_bca{
     margin-left: 2rem;
@@ -136,6 +137,6 @@
     margin-left: 1rem;
 }
 #baten{
-    margin-left: 18rem;
-    margin-top: 3rem;
+    margin-left: 14rem;
+    margin-top: 0rem;
 }

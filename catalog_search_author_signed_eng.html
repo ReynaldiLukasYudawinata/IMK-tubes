@@ -13,7 +13,7 @@
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand logo" href="#">
+                <a class="navbar-brand logo" href="home-signed-eng.html">
                     <img src="images/logo.png" alt="" width="200">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,15 +22,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <form class="d-flex searchbar justify-content-end" style="width: 100%;">
                         <div class="dropdown">
-                            <select class="searchdrop form-select" aria-label="Default select example">
-                                <option class="searchdrop-item" value="0" >Title</option>
-                                <option class="searchdrop-item" value="1" selected>Author</option>
-                                <option class="searchdrop-item" value="2">Publisher</option>
-                                <option class="searchdrop-item" value="3">ISBN</option>
+                            <select id="searchType" id="searchType" class="searchdrop form-select" aria-label="Default select example">
+                                <option class="searchdrop-item" value="0" selected>Title</option>
+                                <option class="searchdrop-item" value="1">Author</option>
+                                <option class="searchdrop-item" value="2">ISBN</option>
                             </select>
                         </div>
-                        <input class="searchinput border-start" aria-label="Search">
-                        <button class="searchbtn btn" type="submit"><i class="bi bi-search"></i></button>
+                        <input id="searchTitle" class="searchinput border-start" aria-label="Search">
+                        <button class="searchbtn btn" onclick="search()" type="button"><i class="bi bi-search"></i></button>
                     </form>
                     <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-end fs-4" style="width: 100%; margin-right: 5%;">
                         <li class="nav-item fs-5 mt-1">
@@ -40,13 +39,13 @@
                             <a class="nav-link" aria-current="page" href="catalog_signed_ind.html"><img class="mb-1 me-1" src="images/IND_small.png" alt="">IND</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" aria-current="page" href="home-signed-eng.html">Home</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link  active" href="#">Catalog</a>
+                            <a class="nav-link active" href="catalog_signed_eng.html">Catalog</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="#">FAQ</a>
+                            <a class="nav-link" href="faq_signed_eng.html">FAQ</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -54,11 +53,11 @@
                             <i class="bi-person-circle ms-1"></i>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown"  style="background-color: #8f3771;">
-                                <li><a class="menudrop-item dropdown-item" href="#" style="color: white;">My Account</a></li>
+                                <li><a class="menudrop-item dropdown-item" href="profile_sebelum_edit_eng.html" style="color: white;">My Account</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="menudrop-item dropdown-item" href="#" style="color: white;">My Cart</a></li>
+                                <li><a class="menudrop-item dropdown-item" href="cart-eng.html" style="color: white;">My Cart</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="menudrop-item dropdown-item" href="#" style="color: white;">Purchase Transaction</a></li>
+                                <li><a class="menudrop-item dropdown-item" href="transaction_history-date_not_picked-eng.html" style="color: white;">Purchase Transaction</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="menudrop-item dropdown-item" href="home-not_signed-eng.html" style="color: white;">Log Out</a></li>
                             </ul>
@@ -177,7 +176,34 @@
             </div>
         </footer>
         
-    
+        <script>
+            function search(){
+                if(document.getElementById("searchType").value=="0"){
+                    if(document.getElementById("searchTitle").value=="asdasd"){
+                        location.href="catalog_search_not_found_signed_eng.html";
+                    }
+                    else if(document.getElementById("searchTitle").value=="Captain Underpants"){
+                        location.href="catalog_searched_signed_eng.html";
+                    }
+                }
+                else if(document.getElementById("searchType").value=="1"){
+                    if(document.getElementById("searchTitle").value=="asdasd"){
+                        location.href="catalog_search_not_found_signed_eng.html";
+                    }
+                    else if(document.getElementById("searchTitle").value=="J. R. R. Tolkien"){
+                        location.href="catalog_search_author_signed_eng.html";
+                    }
+                }
+                else if(document.getElementById("searchType").value=="2"){
+                    if(document.getElementById("searchTitle").value=="asdasd"){
+                        location.href="catalog_search_not_found_signed_eng.html";
+                    }
+                    else if(document.getElementById("searchTitle").value=="9780545027274"){
+                        location.href="catalog_searched_signed_eng.html";
+                    }
+                }
+            }
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     </body>

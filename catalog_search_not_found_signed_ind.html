@@ -13,7 +13,7 @@
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand logo" href="#">
+                <a class="navbar-brand logo" href="home-signed-ind.html">
                     <img src="images/logo.png" alt="" width="200">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,17 +22,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <form class="d-flex searchbar justify-content-end" style="width: 100%;">
                         <div class="dropdown">
-                            <select class="searchdrop form-select" aria-label="Default select example">
+                            <select id="searchType" class="searchdrop form-select" aria-label="Default select example">
                                 <option class="searchdrop-item" value="0" selected>Judul</option>
-                                <option class="searchdrop-item" value="1" >Pengarang</option>
-                                <option class="searchdrop-item" value="2">Penerbit</option>
-                                <option class="searchdrop-item" value="3">ISBN</option>
+                                <option class="searchdrop-item" value="1">Pengarang</option>
+                                <option class="searchdrop-item" value="2">ISBN</option>
                             </select>
                         </div>
-
-
-                        <input class="searchinput border-start" aria-label="Search">
-                        <button class="searchbtn btn" type="submit"><i class="bi bi-search"></i></button>
+                        <input id="searchTitle" class="searchinput border-start" aria-label="Search">
+                        <button class="searchbtn btn" type="button" onclick="search()"><i class="bi bi-search"></i></button>
                     </form>
                     <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-end fs-4" style="width: 100%; margin-right: 5%;">
                         <li class="nav-item fs-5 mt-1">
@@ -42,13 +39,13 @@
                             <a class="nav-link active" aria-current="page" href="#"><img class="mb-1 me-1" src="images/IND_small.png" alt="">IND</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link " aria-current="page" href="#">Beranda</a>
+                            <a class="nav-link" aria-current="page" href="home-signed-ind.html">Beranda</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link active" href="#">Katalog</a>
+                            <a class="nav-link active" href="catalog_signed_ind.html">Katalog</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="#">FAQ</a>
+                            <a class="nav-link" href="faq_signed_ind.html">FAQ</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -56,11 +53,11 @@
                             <i class="bi-person-circle ms-1"></i>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown"  style="background-color: #8f3771;">
-                                <li><a class="menudrop-item dropdown-item" href="#" style="color: white;">Akun saya</a></li>
+                                <li><a class="menudrop-item dropdown-item" href="profile_sebelum_edit_ind.html" style="color: white;">Akun saya</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="menudrop-item dropdown-item" href="#" style="color: white;">Keranjang saya</a></li>
+                                <li><a class="menudrop-item dropdown-item" href="cart-ind.html" style="color: white;">Keranjang saya</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="menudrop-item dropdown-item" href="#" style="color: white;">Transaksi Pembelian</a></li>
+                                <li><a class="menudrop-item dropdown-item" href="transaction_history-date_not_picked-ind.html" style="color: white;">Transaksi Pembelian</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="menudrop-item dropdown-item" href="home-not_signed-ind.html" style="color: white;">Keluar</a></li>
                             </ul>
@@ -73,16 +70,7 @@
         <section class="content" style="background-color: #f4ebe1; padding-bottom: 5%; padding-top: 3%; padding-left:15%; padding-right:15%;">
             <div class="contentAtas" style="height:10%; margin-bottom: 6rem;">
                 <h2 style="color: #4e4e4e;">Katalog</h2>
-                <div class="dropdownCatalog">
-                    <select class="searchdrop form-select" aria-label="Default select example" style="border-radius: 0.5rem; margin-left:440%;" onchange="sort(this.value)">
-                        <option class="searchdrop-item" value="catalog_signed_eng.html" selected>Berdasarkan Rating Menurun</option>
-                        <option class="searchdrop-item" value="catalog_sort_rating_asc.html" >Berdasarkan Rating Menaik</option>
-                        <option class="searchdrop-item" value="catalog_sort_title_asc.html">Berdasarkan Judul A-Z</option>
-                        <option class="searchdrop-item" value="catalog_sort_title_desc.html" >Berdasarkan Judul Z-A</option>
-                        <option class="searchdrop-item" value="catalog_sort_author_asc.html" >Berdasarkan Pengarang A-Z</option>
-                        <option class="searchdrop-item" value="catalog_sort_author_desc.html" >Berdasarkan Pengarang Z-A</option>
-                    </select>
-                </div>
+                
             </div>
             <script>
                 function sort(value){
