@@ -137,7 +137,7 @@
                     <!-- The Modal -->
                     <div id="myModalKonfirmasi" class="modal">
                         <!-- Modal content -->
-                        <div class="modal-content-konfirmasi" style="width: 53%; height: 65%; border-radius: 13px;">
+                        <div class="modal-content-konfirmasi" style="width: 59%; height: 67%; border-radius: 13px;">
                             <span class="close4">&times;</span>
                             <h3 id="cardholder" style="color: black; font-size: x-large;">Cardholder Authentication</h3>
                             <br>
@@ -159,7 +159,7 @@
                                     <label id="harga" style="color: black;">: IDR 195.900,00</label><br>
                                     <label id="tanggalKanan" style="color: black;">: Wednesday, 15 December 2021</label><br>
                                     <label id="nomorKanan" style="color: black;">: 1234567891012</label><br>
-                                    <input type="text" id="lname" name="lname" placeholder="Enter Authentication Code">
+                                    <input type="text" id="pin" name="lname" placeholder="Enter Authentication Code">
                                 </div>
                                 <div id="perbatenan">
                                     <button id="cancel" style="background-color: #8f3771; font-size: x-large; border-radius: 13px;color: white; width: 11rem;" onclick="location.href = 'payment-eng.html' ">Cancel</button>
@@ -209,8 +209,18 @@
         </footer>
     </body>
     <script>
+
+        var dipilih = "";
+
+
         function master() {
             document.getElementById("master").style.border = "3px dotted fuchsia";
+
+            document.getElementById("visa").style.border = "none";
+
+            dipilih = "master";
+
+            document.getElementById("mastercard_id_check").src = "images/master_card_id_check.png";
         }
         function visa() {
             document.getElementById("visa").style.border = "3px dotted fuchsia";
@@ -220,6 +230,12 @@
             // }else{
             //     document.getElementById("visa").style.border = "3px dotted fuchsia";
             // } 
+
+            document.getElementById("master").style.border = "none";
+                
+            dipilih = "visa";
+
+            document.getElementById("mastercard_id_check").src ="images/visa_secure.jpg";
         }
 
         // Get the modal
@@ -235,7 +251,13 @@
         var span4 = document.getElementsByClassName("close4")[0];
         // When the user clicks the button, open the modal 
         btn.onclick = function() {
-        modal.style.display = "block";
+            if(dipilih == ""){
+                alert("Choose Payment Method");
+            }else{
+                modal.style.display = "block";
+            }
+            
+
         }
 
         // When the user clicks on <span> (x), close the modal
@@ -255,9 +277,19 @@
         var btn2 = document.getElementById("ok");
 
         btn2.onclick = function() {
-        modal.style.display = "none";
-        modal4.style.display = "none"
-        modal2.style.display = "block";
+            var a = document.getElementById("pin").value ;
+
+            if(a == ""){
+                modal.style.display = "none";
+                modal2.style.display = "none";
+                modal4.style.display = "none";
+                modal3.style.display = "block";
+            }else{
+                modal.style.display = "none";
+                modal4.style.display = "none"
+                modal2.style.display = "block";
+            }
+            
         }
 
         
