@@ -26,52 +26,63 @@
                                 <option class="searchdrop-item" value="0" selected>Judul</option>
                                 <option class="searchdrop-item" value="1">Pengarang</option>
                                 <option class="searchdrop-item" value="2">ISBN</option>
-                               
+                                
                             </select>
                         </div>
                         <input class="searchinput border-start" aria-label="Search">
-                        <button class="searchbtn btn" type="button" onclick="location.href='catalog_searched_signed_eng.html'"><i class="bi bi-search"></i></button>
+                        <button class="searchbtn btn" type="submit"><i class="bi bi-search"></i></button>
                     </form>
                     <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-end fs-4" style="width: 100%; margin-right: 5%;">
                         <li class="nav-item fs-5 mt-1">
-                            <a class="nav-link" aria-current="page" href="book_details_not_signed_back_eng.html"><img class="mb-1 me-1" src="images/UK_flag_small.png" alt="">ENG</a>
+                            <a class="nav-link" aria-current="page" href="harry_potter.html"><img class="mb-1 me-1" src="images/UK_flag_small.png" alt="">ENG</a>
                         </li>
                         <li class="nav-item fs-5 mt-1 me-5">
                             <a class="nav-link active" aria-current="page" href="#"><img class="mb-1 me-1" src="images/IND_small.png" alt="">IND</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link " aria-current="page" href="home-not_signed-ind.html">Beranda</a>
+                            <a class="nav-link" aria-current="page" href="home-signed-ind.html">Beranda</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link active" href="catalog_not_signed_ind.html">Katalog</a>
+                            <a class="nav-link" href="cart-ind.html">Katalog</a>
                         </li>
                         <li class="nav-item me-3">
                             <a class="nav-link" href="faq_signed_ind.html">FAQ</a>
                         </li>
-                        <li class="nav-item me-3">
-                            <a class="nav-link" href="login-ind.html">Masuk</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Soekino
+                            <i class="bi-person-circle ms-1"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown"  style="background-color: #8f3771;">
+                                <li><a class="menudrop-item dropdown-item" href="profile_sebelum_edit_ind.html" style="color: white;">Akun saya</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="menudrop-item dropdown-item" href="cart-ind.html" style="color: white;">Keranjang saya</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="menudrop-item dropdown-item" href="transaction_history-date_not_picked-ind.html" style="color: white;">Transaksi Pembelian</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="menudrop-item dropdown-item" href="home-not_signed-ind.html" style="color: white;">Keluar</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- tes -->
         <div class="content" style="background-color: #f4ebe1; padding-bottom: 5%; padding-top: 3%;">
             <div style="display:flex; flex-direction: row; width: 100%; " >
                 <div class="gambarBuku">
                     <h1 style="text-align: center; color: black;" >Detil Buku</h1>
                     
-                    <img src="images/book-1back.jpg" alt="captain underpants" >
+                    <img src="images/book-2.jpg" alt="harry potter" >
                     <div class="deretanGambar" style="display:flex; flex-direction: row;">
-                        <img src="images/book-1.jpg" onclick="window.location.href='book_details_not_signed_front_ind.html'" alt="" >
-                        <img src="images/book-1back.jpg" alt="">
+                        <img src="images/book-2.jpg" alt="">
+                        <img src="images/book-2back.jpg" onclick="window.location.href='book_details_signed_back_eng.html'" alt="">
                     </div>
                 </div>
                 <div class="detailBuku" style="margin-top:2%;">
                     
-                    <h3 style="opacity: 0.5; color: black; font-size: 1rem;">Dav Pilky</h3>
+                    <h3 style="opacity: 0.5; color: black; font-size: 1rem;">J.K Rowling</h3>
                     
-                    <h1 style="color:black;">Captain Underpants And The Attack of The Talking Toilets</h1>
+                    <h1 style="color:black;">Harry Potter And The Sorcerer's Stone</h1>
                     <!-- <div style="color: black;display: flex; flex-direction: column; position:absolute;margin-left:32%; transform: translateY(-100%); font-size: 1.2rem;" >
                         <i style="margin-bottom:0.5rem;" class="fa fa-heart" ></i>
                         <i  style="margin-bottom:0.5rem;" class="fa fa-star" ></i>
@@ -82,55 +93,60 @@
                             <i class="fa fa-star" style="color: #ffb300;"></i>
                             4.5
                         </div>
-                        <div class="sold" style="margin-left: -2.5%;">
+                        <div class="sold">
                             Terjual: 69
                         </div>
                         <div class="price">
-                            Rp. 70.000
+                            Rp 100.000
                         </div>
                        
                     </div>
                     <!-- kotak atas -->
-                    <div class="kotak">
-                        <h3>Detail</h3>
+                    <div style="background-color: white;" class="kotak">
+                        <h3 >Detail</h3>
                         <table >
                             <tr>
-                                <td class="keterangan">Tanggal Rilis</td>
-                                <td class="titik-dua">:</td>
-                                <td>February 1 1999</td>
+                                <td>Tanggal rilis</td>
+                                <td>:</td>
+                                <td>June 26 1997</td>
                             </tr>
                             <tr>
-                                <td class="keterangan">ISBN</td>
-                                <td class="titik-dua">:</td>
-                                <td>9780545027274</td>
+                                <td>ISBN</td>
+                                <td>:</td>
+                                <td>9780590353430</td>
                             </tr>
                             <tr>
-                                <td class="keterangan">Penerbit</td>
-                                <td class="titik-dua">:</td>
-                                <td>Gramedia</td>
+                                <td>Penerbit</td>
+                                <td>:</td>
+                                <td>Bloomsbury </td>
                             </tr>
                             <tr>
-                                <td class="keterangan">Banyak Halaman</td>
-                                <td class="titik-dua">:</td>
-                                <td>144 lembar</td>
+                                <td>Banyak Halaman</td>
+                                <td>:</td>
+                                <td>223 pages</td>
                             </tr>
                         </table>
                     </div>
                     <!-- kotak bawah -->
-                    <div class="kotak">
+                    <div class="kotak" style="background-color: white;">
                         <h3>Sinopsis</h3>
-                        <p>George dan Harold biasanya anak-anak yang penuh tanggung jawab... maksudnya, kapan pun ada kejadian heboh di sekolah, pasti George dan Harold yang bertanggung jawab!
-
-                            Dan rupanya kembali bikin ulah! Mula-mula, mereka membikin kacau Lomba Karya Ilmiah yang diadakan di sekolah. Berikutnya, mereka tidak sengaja menciptakan pasukan jahat dan buas. Pasukan bersosok toilet cerewet itu siap mengambil ahli dunia.
-                            Siapa yang mampu menghentikan toilet yang suka makan orang itu? Rupanya ini tugas buat... KAPTEN KOLOR!
-                            
-                            KAPTEN KOLOR, kisah petualangan penuh aksi, penuh horor, sekaligus penuh tawa. Dilengkapi FLIP-O-RAMA, teknik ilustrasi unik yang membuat pembaca bisa menciptakan film animasi sendiri.</p>
+                        <p>Harry Potter and the Sorcerer's Stone bercerita tentang petualangan Harry Potter (Daniel Radcliffe) di dunia sihir. Dalam cerita tersebut, dunia terbagi menjadi dua, dunia sihir dan dunia non-sihir atau dijuluki muggle. Di dunia sihir, hiduplah penyihir hitam jahat Lord Voldemort yang ingin berkuasa di dunia.</p>
                     </div>
                 </div>
-                <div class="bagianKanan">
-                    <h3 style="text-align: center;">Ingin Beli?</h3>
-                    <button onclick="window.location.href='login-ind.html'" class="addToCartLogin" style="margin-left: 25%;">
-                        Masuk
+                <div class="addToCart" style="background-color: white;">
+                    <h4>Quantity:</h4>
+                    <div style="display: flex; flex-direction: row; margin-top:10%;">
+                        <button id="minusButton" style="margin-right: 2rem;" onclick="minus()">-</button>
+                        <h4 id="quantity">1</h4>
+                        <button id="plusButton" style="margin-left: 2rem;" onclick="plus()">+</button>
+                    </div>
+                    <hr >
+                    <div style="display: flex; flex-direction: row; margin-top:10%; margin-bottom:8%;">
+                        <h4 style="margin-right:3rem;">Subtotal:</h4>
+                        <h4 id="subtotal">Rp100000</h4>
+                    </div>
+                    <button style="width:78%; margin-left:25%;"  onclick="window.location.href='cart_harry_ind.html'" class="addToCartLogin">
+                        Tambah Ke Keranjang
                     </button>
                 </div>
                 
@@ -146,7 +162,7 @@
 
                     <div class="col p-5" style="border: #4e4e4e; border-left-style: solid;">
                         <h5>About Toko Buku Pak John</h5>
-                        <p >Open since 2021, we strive to give you the<br> best experience of online book shopping.<br>
+                        <p>Open since 2021, we strive to give you the<br> best experience of online book shopping.<br>
                             We hope to see you again</p>
                     </div>
             
@@ -164,5 +180,39 @@
                 </div>
             </footer>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     </body>
+
+    <script>
+        function minus(){
+            var q=document.getElementById("quantity").innerHTML;
+            //console.log(q);
+            var quantity=parseInt(q);
+            if(quantity>1){
+                quantity=quantity-1;
+                console.log(quantity);
+            }
+            document.getElementById("quantity").innerHTML=quantity;
+           if(quantity==1){
+            document.getElementById("subtotal").innerHTML="Rp100000";
+           }
+           else{
+                document.getElementById("subtotal").innerHTML="Rp"+Math.round(quantity*10000*10)/10;
+           }
+
+        }
+        function plus(){
+            var q=document.getElementById("quantity").innerHTML;
+            //console.log(q);
+            var quantity=parseInt(q);
+            if(quantity<999){
+                quantity=quantity+1;
+                console.log(quantity);
+            }
+            document.getElementById("quantity").innerHTML=quantity;
+            document.getElementById("subtotal").innerHTML="Rp"+Math.round(quantity*10000*10)/10;
+        }
+    </script>
+
 </html>

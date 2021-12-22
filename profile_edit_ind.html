@@ -24,8 +24,8 @@
                             <select class="searchdrop form-select" aria-label="Default select example">
                                 <option class="searchdrop-item" value="0" selected>Judul</option>
                                 <option class="searchdrop-item" value="1">Pengarang</option>
-                                <option class="searchdrop-item" value="2">Penerbit</option>
-                                <option class="searchdrop-item" value="3">ISBN</option>
+                                <option class="searchdrop-item" value="2">ISBN</option>
+                             
                             </select>
                         </div>
                         <input class="searchinput border-start" aria-label="Search">
@@ -33,19 +33,19 @@
                     </form>
                     <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-end fs-4" style="width: 100%; margin-right: 5%;">
                         <li class="nav-item fs-5 mt-1">
-                            <a class="nav-link active" aria-current="page" href="profile_edit_ind.html"><img class="mb-1 me-1" src="images/UK_flag_small.png" alt="">ENG</a>
+                            <a class="nav-link" aria-current="page" href="profile_edit_eng.html"><img class="mb-1 me-1" src="images/UK_flag_small.png" alt="">ENG</a>
                         </li>
                         <li class="nav-item fs-5 mt-1 me-5">
-                            <a class="nav-link" aria-current="page" href="#"><img class="mb-1 me-1" src="images/IND_small.png" alt="">IND</a>
+                            <a class="nav-link active" aria-current="page" href="#"><img class="mb-1 me-1" src="images/IND_small.png" alt="">IND</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                            <a class="nav-link" aria-current="page" href="home-signed-ind.html">Beranda</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="#">Katalog</a>
+                            <a class="nav-link" href="catalog_signed_ind.html">Katalog</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="#">FAQ</a>
+                            <a class="nav-link" href="faq_signed_ind.html">FAQ</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -53,13 +53,13 @@
                             <i class="bi-person-circle ms-1"></i>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown"  style="background-color: #8f3771;">
-                                <li><a class="menudrop-item dropdown-item" href="#" style="color: white;">My Account</a></li>
+                                <li><a class="menudrop-item dropdown-item" href="profile_sebelum_edit_ind.html" style="color: white;">Akun saya</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="menudrop-item dropdown-item" href="#" style="color: white;">My Cart</a></li>
+                                <li><a class="menudrop-item dropdown-item" href="cart-ind.html" style="color: white;">Keranjang saya</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="menudrop-item dropdown-item" href="#" style="color: white;">Purchase Transaction</a></li>
+                                <li><a class="menudrop-item dropdown-item" href="transaction_history-date_not_picked-ind.html" style="color: white;">Transaksi Pembelian</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="menudrop-item dropdown-item" href="home-not_signed-eng.html" style="color: white;">Log Out</a></li>
+                                <li><a class="menudrop-item dropdown-item" href="home-not_signed-ind.html" style="color: white;">Keluar</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -88,16 +88,16 @@
                             <td><input type="text" value="SoekinoDirhamsyah@Gmail.com"></td>
                         </tr>
                         <tr>
-                            <td class="keterangan">Ubah Password</td>
+                            <td class="keterangan">Ubah Kata Sandi</td>
                             <td class="titik-dua">:  </td>
                             
-                            <td><input type="text" value=""></td>
+                            <td><input id="password" type="password" value=""></td>
                         </tr>
                         <tr>
-                            <td class="keterangan">Ketik Ulang Password</td>
+                            <td class="keterangan">Ketik Ulang Kata Sandi</td>
                             <td class="titik-dua">:  </td>
                             
-                            <td><input type="text" value=""></td>
+                            <td><input id="rePassword" type="password" value=""></td>
                         </tr>
                         <tr>
                             <td class="keterangan">Alamat</td>
@@ -114,8 +114,8 @@
                        </table>
                        <br>
                        <div class="divButton" style="display: flex; flex-direction: row;">
-                            <button style="margin-right:3rem; color: #fff;">Ubah</button>     
-                            <button style="color: #fff;">Batal</button>
+                            <button type="button" onclick="edit()" style="margin-right:3rem; color: #fff;">Ubah</button>     
+                            <button type="button" onclick="location.href='profile_sebelum_edit_ind.html'" style="color: #fff;">Batal</button>
                         </div>
                     </div>
                 </div>
@@ -152,6 +152,20 @@
                 </div>
             </footer>
         </div>
+
+        <script>
+            function edit(){
+                password=document.getElementById("password").value;
+                re=document.getElementById("rePassword").value;
+                console.log(re);
+                if(password!=re){
+                    alert("Password and the Re-typed password must be the same!");
+                }
+                else{
+                    location.href="profile_setelah_edit_ind.html"
+                }
+            }
+        </script>
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>

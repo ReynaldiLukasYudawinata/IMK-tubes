@@ -1,13 +1,14 @@
 <!doctype html>
-    <head lang="en">
+    <head lang="id">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="css/home-style.css">
-        <link rel="stylesheet" href="css/profile.css">
+        <link rel="stylesheet" href="css/detail_buku.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>Profile</title>
+
+        <title>Book Details</title>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark">
@@ -35,7 +36,7 @@
                             <a class="nav-link active" aria-current="page" href="#"><img class="mb-1 me-1" src="images/UK_flag_small.png" alt="">ENG</a>
                         </li>
                         <li class="nav-item fs-5 mt-1 me-5">
-                            <a class="nav-link" aria-current="page" href="profile_sebelum_edit_ind.html"><img class="mb-1 me-1" src="images/IND_small.png" alt="">IND</a>
+                            <a class="nav-link" aria-current="page" href="book_details_signed_front_ind.html"><img class="mb-1 me-1" src="images/IND_small.png" alt="">IND</a>
                         </li>
                         <li class="nav-item me-3">
                             <a class="nav-link active" aria-current="page" href="home-signed-eng.html">Home</a>
@@ -65,51 +66,93 @@
                 </div>
             </div>
         </nav>
-        
-       <div class="content" style="background-color: #f4ebe1; padding:10%;">
-            
-            <div class="blackCard" style="display:flex ; padding :5%; border-radius:1rem; flex-direction: row; margin-left:17%; background-color: #313131;  width: 70%;">
-                <div class="container">
-                    <h1 style="margin-left: 10%;">Profile</h1>
-                    <div class="bagianKanan" style="margin-top:3.6rem; margin-left: 6rem;">
-                       <table style="font-size:1.5rem;">
-                           <tr>
-                               <td width="20%">Name</td>
-                               <td class="titik-dua">:  </td>
-                               
-                               <td>Soekino Dirhamsyah</td>
-                           </tr>
-                           <tr>
-                            <td >Email</td>
-                            <td class="titik-dua">:  </td>
-                            
-                            <td>SoekinoDirhamsyah@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td >Address</td>
-                            <td class="titik-dua">:  </td>
-                           
-                            <td>Jalan 123 No.19, Bandung</td>
-                        </tr>
-                        <tr>
-                            <td >Phone Number</td>
-                            <td class="titik-dua">:  </td>
-                            
-                            <td>08112244556677</td>
-                        </tr>
-                       </table>
-                       <br>
-                       <div class="divButton" style="display: flex; flex-direction: row;">
-                            <button type="button" onclick="location.href='profile_edit_eng.html'" style="color: #fff;">Edit Profile</button>     
-                        </div>
+        <div class="content" style="background-color: #f4ebe1; padding-bottom: 5%; padding-top: 3%;">
+            <div style="display:flex; flex-direction: row; width: 100%; " >
+                <div class="gambarBuku">
+                    <h1 style="text-align: center; color: black;" >Book Detail</h1>
+                    
+                    <img src="images/book-2.jpg" alt="harry potter" >
+                    <div class="deretanGambar" style="display:flex; flex-direction: row;">
+                        <img src="images/book-2.jpg" alt="">
+                        <img src="images/book-2back.jpg" onclick="window.location.href='book_details_signed_back_eng.html'" alt="">
                     </div>
+                </div>
+                <div class="detailBuku" style="margin-top:2%;">
+                    
+                    <h3 style="opacity: 0.5; color: black; font-size: 1rem;">J.K Rowling</h3>
+                    
+                    <h1 style="color:black;">Harry Potter And The Sorcerer's Stone</h1>
+                    <!-- <div style="color: black;display: flex; flex-direction: column; position:absolute;margin-left:32%; transform: translateY(-100%); font-size: 1.2rem;" >
+                        <i style="margin-bottom:0.5rem;" class="fa fa-heart" ></i>
+                        <i  style="margin-bottom:0.5rem;" class="fa fa-star" ></i>
+                        <i class="fa fa-share" ></i>
+                    </div> -->
+                    <div class="statistics" style="display: flex; flex-direction: row; border-bottom: 1px solid black; height:8%; padding-bottom: 1%;">
+                        <div class="bintang" >
+                            <i class="fa fa-star" style="color: #ffb300;"></i>
+                            4.5
+                        </div>
+                        <div class="sold">
+                            Sold: 69
+                        </div>
+                        <div class="price">
+                            $6.96
+                        </div>
+                       
+                    </div>
+                    <!-- kotak atas -->
+                    <div style="background-color: white;" class="kotak">
+                        <h3 >Detail</h3>
+                        <table >
+                            <tr>
+                                <td>Release Date</td>
+                                <td>:</td>
+                                <td>June 26 1997</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN</td>
+                                <td>:</td>
+                                <td>9780590353430</td>
+                            </tr>
+                            <tr>
+                                <td>Publisher</td>
+                                <td>:</td>
+                                <td>Bloomsbury </td>
+                            </tr>
+                            <tr>
+                                <td>Page Quantity</td>
+                                <td>:</td>
+                                <td>223 pages</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- kotak bawah -->
+                    <div class="kotak" style="background-color: white;">
+                        <h3>Synopsis</h3>
+                        <p>It is a story about Harry Potter, an orphan brought up by his aunt and uncle because his parents were killed when he was a baby. Harry is unloved by his uncle and aunt but everything changes when he is invited to join Hogwarts School of Witchcraft and Wizardry and he finds out he's a wizard</p>
+                    </div>
+                </div>
+                <div class="addToCart" style="background-color: white;">
+                    <h4>Quantity:</h4>
+                    <div style="display: flex; flex-direction: row; margin-top:10%;">
+                        <button id="minusButton" class="btn-min" onclick="minus()">-</button>
+                        <h4 id="quantity">1</h4>
+                        <button id="plusButton" class="btn-plus" onclick="plus()">+</button>
+                    </div>
+                    <hr >
+                    <div style="display: flex; flex-direction: row; margin-top:10%; margin-bottom:8%;">
+                        <h4 style="margin-right:3rem;">Subtotal:</h4>
+                        <h4 id="subtotal">$6.96</h4>
+                    </div>
+                    <button onclick="window.location.href='cart_harry_eng.html'" class="addToCartLogin">
+                        Add To Cart
+                    </button>
                 </div>
                 
             </div>
-
-       </div>
-
-        <div style="height: 200px;">
+           
+        </div>
+         <div style="height: 200px;">
             <footer class="text-center" style="width: 100%; height: 100%;">
                 <div class="row" style="height: 100%;">
                     <div class="col p-5 my-auto" style="border: #4e4e4e;">
@@ -136,19 +179,39 @@
                 </div>
             </footer>
         </div>
-
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     </body>
+
+    <script>
+        function minus(){
+            var q=document.getElementById("quantity").innerHTML;
+            //console.log(q);
+            var quantity=parseInt(q);
+            if(quantity>1){
+                quantity=quantity-1;
+                console.log(quantity);
+            }
+            document.getElementById("quantity").innerHTML=quantity;
+           if(quantity==1){
+            document.getElementById("subtotal").innerHTML="$6.96";
+           }
+           else{
+                document.getElementById("subtotal").innerHTML="$"+Math.round(quantity*6.96*10)/10;
+           }
+
+        }
+        function plus(){
+            var q=document.getElementById("quantity").innerHTML;
+            //console.log(q);
+            var quantity=parseInt(q);
+            if(quantity<999){
+                quantity=quantity+1;
+                console.log(quantity);
+            }
+            document.getElementById("quantity").innerHTML=quantity;
+            document.getElementById("subtotal").innerHTML="$"+Math.round(quantity*6.96*10)/10;
+        }
+    </script>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
