@@ -1,0 +1,185 @@
+<!doctype html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/home-style.css">
+        <link rel="stylesheet" href="css/cart-eng.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+        <title>Cart</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="home-signed-eng.html">
+                    <img src="images/logo.png" alt="" width="200">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex searchbar justify-content-end" style="width: 100%;">
+                        <div class="dropdown">
+                            <select class="searchdrop form-select" aria-label="Default select example">
+                                <option class="searchdrop-item" value="0" selected>Title</option>
+                                <option class="searchdrop-item" value="1">Author</option>
+                                <option class="searchdrop-item" value="2">ISBN</option>
+                            </select>
+                        </div>
+                        <input class="searchinput border-start" aria-label="Search">
+                        <button class="searchbtn btn" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                    <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-end fs-4" style="width: 100%; margin-right: 5%;">
+                        <li class="nav-item fs-5 mt-1">
+                            <a class="nav-link active" aria-current="page" href="#"><img class="mb-1 me-1" src="images/UK_flag_small.png" alt="">ENG</a>
+                        </li>
+                        <li class="nav-item fs-5 mt-1 me-5">
+                            <a class="nav-link" aria-current="page" href="cart-ind.html"><img class="mb-1 me-1" src="images/IND_small.png" alt="">IND</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" aria-current="page" href="home-signed-eng.html">Home</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="catalog_signed_eng.html">Catalog</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="faq_signed_eng.html">FAQ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Soekino
+                            <i class="bi-person-circle ms-1"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown"  style="background-color: #8f3771;">
+                                <li><a class="menudrop-item dropdown-item" href="profile_sebelum_edit_eng.html" style="color: white;">My Account</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="menudrop-item dropdown-item" href="cart-eng.html" style="color: white;">My Cart</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="menudrop-item dropdown-item" href="transaction_history-date_not_picked-eng.html" style="color: white;">Purchase Transaction</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="menudrop-item dropdown-item" href="home-not_signed-eng.html" style="color: white;">Log Out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="content" style="background-color: #f4ebe1; padding-bottom: 5%; padding-top: 3%;">
+            <div style="display:flex; width: 100%; " >
+                <h1 style="text-align: center; color: black; margin-left: 7rem;" >Cart</h1> 
+                
+                <div class="kotakBukuCaptain" style="display:flex; flex-direction: row">
+                    <img id= "captain" src="images/book-1.jpg" alt="captain underpants" width="130vw" height="180vh" >
+
+                    <div class ="deskripsiCaptain" style="width: 40%;" >
+                        <h4 style="color: black">Captain Underpants And The Attack Of The Talking Toilets</h4>
+                        <h5 style="color: black">By: Dav Pilky</h5>
+                        <h5 style="color: black">Rp. 69.000,00</h5>
+                    </div>
+
+                    <div class = "jumlahCaptain" style=" display:flex; flex-direction: row">
+                        <button id="buttonMinCaptain" style="background-color: #8f3771; height: 2rem; border: none;" onclick="minusCaptain()"><i class="fa fa-minus-circle" style="color: #FFF;"></i></button>
+                        <h4 id="quantityCaptain" style="margin-left: 1rem; margin-right: 1rem; color: black;">1</h4>
+                        <button id = "buttonPlusCaptain" style="background-color: #8f3771; height: 2rem; border: none; height: 2rem;" onclick="plusCaptain()"><i class="fa fa-plus-circle" style="color: #FFF;"></i></button>
+                        <button id = "tempatSampahCaptain" style="background-color: #8f3771; height: 2rem; border: none; height: 2rem;" onclick="plus()"><i class="fa fa-trash" style="color: #FFF;"></i></button>
+                    </div>
+                </div>
+
+                <div class="kotakBukuHarry" style="display:flex; flex-direction: row">
+                    <img id= "Harry" src="images/book-2.jpg" alt="heri potter" width="130vw" height="180vh" >
+
+                    <div class ="deskripsiCaptain" style="width: 40%;" >
+                        <h4 style="color: black">Harry Potter And The Sorcerer's Stone</h4>
+                        <h5 style="color: black">By: J.K. Rowling</h5>
+                        <h5 style="color: black">Rp. 100.000,00</h5>
+                    </div>
+
+                    <div class = "jumlahHarry" style=" display:flex; flex-direction: row">
+                        <button id="buttonMinHarry" style="background-color: #8f3771; height: 2rem; border: none;" onclick="minusHarry()"><i class="fa fa-minus-circle" style="color: #FFF;"></i></button>
+                        <h4 id="quantityHarry" style="margin-left: 1rem; margin-right: 1rem; color: black;">1</h4>
+                        <button id = "buttonPlusHarry" style="background-color: #8f3771; height: 2rem; border: none;" onclick="plusHarry()"><i class="fa fa-plus-circle" style="color: #FFF;"></i></button>
+                        <button id = "tempatSampahHarry" style="background-color: #8f3771; height: 2rem; border: none;" onclick="plus()"><i class="fa fa-trash" style="color: #FFF;"></i></button>
+                    </div>
+                </div>
+
+                <div class="belanja">
+                    <h3 id="shopSum" style="color: black">Shopping Summary</h3>
+                    <h4 id = "totalPrice" style="color: black">Total Price (</h4>
+                    <h4 id = "jumlahBuku" style="color: black">2</h4>
+                    <h4 id="items" style="color: black"> Items)</h4>
+                    <h4 id="subtotal" style="color: black">Rp 169.000,00</h4>
+                    <h4 id="titik" style="color: black">---------------------------------------------------------</h4>
+                    <h4 id="totPri" style="color: black">Total Price</h4>
+                    <h4 id="hargaAkhir" style="color: black">Rp 169.000,00</h4>
+                    <button id="checkout" style="background-color: #8f3771; border: none; font-size: x-large; border-radius: 13px;color: white; width: 15rem;" onclick="location.href='payment-eng.html'">Checkout</button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-center" style="width: 100%; height: 100%;">
+            <div class="row" style="height: 100%; width: 100%;">
+                <div class="col p-4 my-auto" style="border: #4e4e4e;">
+                    <h5>Copyright Toko Buku Pak John ™</h5>
+                </div>
+
+                <div class="col p-4" style="border: #4e4e4e; border-left-style: solid;">
+                    <h5>About Toko Buku Pak John</h5>
+                    <p>Open since 2021, we strive to give you the<br> best experience of online book shopping.<br>
+                        We hope to see you again</p>
+                </div>
+        
+                <div class="col p-4" style="border: #4e4e4e; border-left-style: solid;">
+                    <form>
+                        <h5>Follow Us</h5>
+                        <div style="text-decoration: none;">
+                            <a href="" class="social-medias me-3"><i class="bi bi-facebook"></i></a>
+                            <a href="" id="instagram" class="social-medias me-3" style="color: #b9338c;"><i class="bi bi-instagram"></i></a>
+                            <a href="" id="twitter" class="social-medias me-3" style="color: #50abf1;"><i class="bi bi-twitter"></i></a>
+                            <a href="" id="line" class="social-medias me-3" style="color: #00c300;"><i class="bi bi-line"></i></a>
+                            <a href="" id="whatsapp" class="social-medias me-3" style="color: #44c554;"><i class="bi bi-whatsapp"></i></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    </body>
+    <script>
+        function minusCaptain(){
+            var q=document.getElementById("quantityCaptain").innerHTML;
+            var q2=document.getElementById("quantityHarry").innerHTML;
+            //console.log(q);
+            var quantity=parseInt(q);
+            var quantity2=parseInt(q2);
+    
+    
+    
+            if(quantity>1){
+                quantity=quantity-1;
+                console.log(quantity);
+            }
+            document.getElementById("quantityCaptain").innerHTML=quantity;
+            subtotal=(quantity*69000)+(quantity2*100000);
+            document.getElementById("subtotal").innerHTML="Rp. "+ subtotal +",00"
+        }
+        function plusCaptain(){
+            var q=document.getElementById("quantityCaptain").innerHTML;
+            var q2=document.getElementById("quantityHarry").innerHTML;
+            //console.log(q);
+            var quantity=parseInt(q);
+            var quantity2=parseInt(q2);
+            if(quantity<999){
+                quantity=quantity+1;
+                console.log(quantity);
+            }
+            document.getElementById("quantityCaptain").innerHTML=quantity;
+            subtotal=(quantity*69000)+(quantity2*100000);
+            document.getElementById("subtotal").innerHTML="Rp. "+subtotal+",00"
+        }
+    </script>
+</html>
