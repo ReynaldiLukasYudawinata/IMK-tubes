@@ -42,7 +42,7 @@
                             <a class="nav-link" aria-current="page" href="home-signed-ind.html">Beranda</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="catalog_signed_ind.html">Katalog</a>
+                            <a class="nav-link active" href="catalog_signed_ind.html">Katalog</a>
                         </li>
                         <li class="nav-item me-3">
                             <a class="nav-link" href="faq_signed_ind.html">FAQ</a>
@@ -68,8 +68,9 @@
         </nav>
 
         <div class="content" style="background-color: #f4ebe1; padding-bottom: 5%; padding-top: 3%;">
-            <div style="display:flex; width: 100%; " >
-                <h1 style="text-align: center; color: black; margin-left: 7rem;" >Cart</h1> 
+            <h1 style=" color: black; margin-left: 7rem; margin-bottom:-2rem;"  >Keranjang</h1> 
+            <div  style="display:flex; width: 100%; margin-left:10%;" >
+                
                 
                 <div class="kotakBukuCaptain" style="display:flex; flex-direction: row">
                     <img id= "captain" src="images/book-1.jpg" alt="captain underpants" width="130vw" height="180vh" >
@@ -81,10 +82,10 @@
                     </div>
 
                     <div class = "jumlahCaptain" style=" display:flex; flex-direction: row">
-                        <button id="buttonMinCaptain" style="height: 2rem;" onclick="minusCaptain()"><i class="fa fa-minus-circle"></i></button>
+                        <button id="buttonMinCaptain"  style="height: 2rem; background-color: #8f3771; color:white; width:2rem; border:none;" onclick="minusCaptain()"><i class="fa fa-minus"></i></button>
                         <h4 id="quantityCaptain" style="margin-left: 1rem; margin-right: 1rem; color: black;">1</h4>
-                        <button id = "buttonPlusCaptain" style="height: 2rem;" onclick="plusCaptain()"><i class="fa fa-plus-circle"></i></button>
-                        <button id = "tempatSampahCaptain" style="height: 2rem;" ><i class="fa fa-trash"></i></button>
+                        <button id = "buttonPlusCaptain"  style="height: 2rem; background-color: #8f3771; color:white; width:2rem; border:none;" onclick="plusCaptain()"><i class="fa fa-plus"></i></button>
+                        <button id = "tempatSampahCaptain" style="  font-size:1.5rem; height: 2.5rem; background-color: #8f3771; color:white; width:2.5rem; border:none;" ><i class="fa fa-trash"></i></button>
                     </div>
                     
                    
@@ -100,10 +101,10 @@
                     </div>
 
                     <div class = "jumlahHarry" style=" display:flex; flex-direction: row">
-                        <button id="buttonMinHarry" style="height: 2rem;" onclick="minusHarry()"><i class="fa fa-minus-circle"></i></button>
+                        <button id="buttonMinHarry"  style="height: 2rem; background-color: #8f3771; color:white; width:2rem; border:none;" onclick="minusHarry()"><i class="fa fa-minus"></i></button>
                         <h4 id="quantityHarry" style="margin-left: 1rem; margin-right: 1rem; color: black;">1</h4>
-                        <button id = "buttonPlusHarry" style="height: 2rem;" onclick="plusHarry()"><i class="fa fa-plus-circle"></i></button>
-                        <button id = "tempatSampahHarry" style="height: 2rem;" onclick="location.href='cart_captain_eng.html'"><i class="fa fa-trash"></i></button>
+                        <button id = "buttonPlusHarry" style="height: 2rem; background-color: #8f3771; color:white; width:2rem; border:none;" onclick="plusHarry()"><i class="fa fa-plus"></i></button>
+                        <button id = "tempatSampahHarry" style="  font-size:1.5rem; height: 2.5rem; background-color: #8f3771; color:white; width:2.5rem; border:none;" onclick="location.href='cart_captain_eng.html'"><i class="fa fa-trash"></i></button>
                     </div>
                     
                    
@@ -111,20 +112,20 @@
                 </div>
 
                 <div class="belanja">
-                    <h3 id="shopSum" style="color: black">Shopping Summary</h3>
-                    <h4 id = "totalPrice" style="color: black">Total Price (</h4>
+                    <h3 id="shopSum" style="color: black">Rincian Belanja</h3>
+                    <h4 id = "totalPrice" style="color: black">Harga Total(</h4>
                     <h4 id = "jumlahBuku" style="color: black">2</h4>
-                    <h4 id="items" style="color: black"> Items)</h4>
+                    <h4 id="items" style="color: black"> Barang)</h4>
                     <h4 id="subtotal" style="color: black">Rp170000</h4>
                     <h4 id="pajak" style="color: black; margin-left:2rem;">Pajak(10%):</h4>
                     <h4 id="hargaPajak" style="color: black">Rp17000</h4>
                     <h4 id="titik" style="color: black">---------------------------------------------------------</h4>
-                    <h4 id="totPri" style="color: black">Total Price</h4>
-                    <h4 id="hargaAkhir" style="color: black">$11.8</h4>
-                    <button id="checkout" style="background-color: fuchsia; font-size: x-large; border-radius: 13px;color: white; width: 15rem; " onclick="location.href='payment-eng.html'">Checkout</button>
+                    <h4 id="totPri" style="color: black">Harga Total</h4>
+                    <h4 id="hargaAkhir" style="color: black">Rp187000</h4>
+                    <button id="checkout" style="background-color:#8f3771; border:none; margin:0;margin-left:30%;margin-top:3%; font-size: x-large; border-radius: 13px;color: white; width: 15rem; " onclick="location.href='payment-eng.html'">Checkout</button>
                 </div>
             </div>
-            <button onclick="location.href='catalog_signed_eng.html'" type="button" style="background-color: #8f3771; border:none; border-radius: 0.5rem; padding:0.5rem; color:white; margin-left:7%; margin-top:2%;">Get More Book</button>
+            <button onclick="location.href='catalog_signed_ind.html'" type="button" style="background-color: #8f3771; border:none; border-radius: 0.5rem; padding:0.5rem; color:white; margin-left:7%; margin-top:2%;">Tambah Buku</button>
         </div>
 
         <footer class="text-center" style="width: 100%; height: 100%;">

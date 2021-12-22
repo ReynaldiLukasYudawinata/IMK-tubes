@@ -142,9 +142,9 @@
                     <hr >
                     <div style="display: flex; flex-direction: row; margin-top:10%; margin-bottom:8%;">
                         <h4 style="margin-right:3rem;">Subtotal:</h4>
-                        <h4 id="subtotal">70000</h4>
+                        <h4 id="subtotal">Rp70000</h4>
                     </div>
-                    <button style="margin-left:16% ;width:70%;" onclick="window.location.href='cart_captain_ind.html'" class="addToCartLogin">
+                    <button style="margin-left:25% ;width:75%;" onclick="window.location.href='cart_captain_ind.html'" class="addToCartLogin">
                         Tambah ke keranjang
                     </button>
                 </div>
@@ -194,7 +194,7 @@
             }
             document.getElementById("quantity").innerHTML=quantity;
            
-            document.getElementById("subtotal").innerHTML=quantity*70000;
+            document.getElementById("subtotal").innerHTML="Rp"+quantity*70000;
         }
         function plus(){
             var q=document.getElementById("quantity").innerHTML;
@@ -205,7 +205,7 @@
                 console.log(quantity);
             }
             document.getElementById("quantity").innerHTML=quantity;
-            document.getElementById("subtotal").innerHTML=quantity*70000;
+            document.getElementById("subtotal").innerHTML="Rp"+quantity*70000;
         }
     </script>
 
